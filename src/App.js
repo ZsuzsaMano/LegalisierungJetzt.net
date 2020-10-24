@@ -1,5 +1,5 @@
 
-import './App.css';
+import './styles/style.min.css';
 
 function App() {
   return (
