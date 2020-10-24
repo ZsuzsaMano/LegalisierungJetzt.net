@@ -1,0 +1,46 @@
+//main: style.scss
+header{
+  @include flex(space-around, center, row);
+  span{
+    font-size: 3rem;
+  }
+  .header__logo{
+    height: 100px;
+  }
+}
+
+
+
+main{
+  background: url("../img/Illegal.png");
+  text-shadow:$text-shadow;
+  padding: 2rem;
+  &__title{
+    font-size: 1.8rem;
+  }
+  &__text{
+  max-width: 972px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: rgba(0, 0, 0, 0.85);
+  border: 3px solid $lila;
+  color: white;
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+
+}
+
+.signatories{
+  padding: 1rem;
+  text-align: center;
+  background: #141313;
+  h3{
+    font-size: 2.1rem;
+    color:white;
+  }
+  p{
+    color:$lila;
+    font-size: 1.1rem;
+  }
+}
