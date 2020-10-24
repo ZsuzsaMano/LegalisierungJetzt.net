@@ -1,10 +1,11 @@
 
 import './styles/style.min.css';
+import Events from './components/Events';
 
 function App() {
   return (
     <div className="App">
-
+<Events/>
     </div>
   );
 }
