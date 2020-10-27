@@ -1,9 +1,10 @@
 import React from 'react';
+import languagesObject from '../languagesObject';
 
-const Materials = () => {
+const Materials = ({ language }) => {
   return (
     <main className="materials">
-      <h2 className="materials__title title" id="materials__title">Materials</h2>
+      <h2 className="materials__title title" id="materials__title">{languagesObject.[language].nav[2]}</h2>
     <section className="dark-box">
       <div className="material">
       <h3>12.10.2020, 11h Aquarium Berlin Presskonferenz</h3>

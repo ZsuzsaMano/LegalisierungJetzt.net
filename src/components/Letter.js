@@ -1,6 +1,7 @@
 import React from 'react';
+import languagesObject from '../languagesObject';
 
-const Letter = () => {
+const Letter = ({ language }) => {
   return(
     <main className="letter">
       <article className="letter__article">

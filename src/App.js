@@ -25,10 +25,14 @@ function App() {
        updateLanguage = {updateLanguage}
        language = {language}
        />
-    {page ==='main' &&  <Main/> }
-    {page ==='nav__events' &&  <Events/> }
-    {page ==='nav__materials' &&  <Materials/> }
-    {page ==='nav__letter' &&  <Letter/> }
+    {page ==='main' &&  <Main
+    language = {language}/> }
+    {page ==='nav__events' &&  <Events
+    language = {language}/> }
+    {page ==='nav__materials' &&  <Materials
+    language = {language}/> }
+    {page ==='nav__letter' &&  <Letter
+    language = {language}/> }
 
 
 
