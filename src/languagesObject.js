@@ -101,3 +101,5 @@ LEGALIZACIÓN YA!
     signatories: 'Firmantes',
   },
 };
+
+export default languagesObject;
