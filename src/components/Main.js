@@ -8,9 +8,9 @@ const Main = () => {
 
         <iframe
             src="https://player.twitch.tv/?channel=legalisierungjetzt&parent=legalisierungjetzt.net&autoplay=true"
-            frameborder="2"
+            frameBorder="2"
             scrolling="no"
-            allowfullscreen="true">
+            allowFullScreen={true}>
         </iframe>
 
 
