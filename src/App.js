@@ -16,7 +16,8 @@ const updatePage = e => setPage(e.target.id)
 
   return (
     <div className="App">
-      <Hero/>
+      <Hero
+       updatePage={updatePage}/>
       <Navbar
        page={page}
        updatePage = {updatePage}
