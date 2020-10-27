@@ -9,12 +9,12 @@ import Materials from './components/Materials';
 
 function App() {
 
-const [page, setPage] = useState('main');
-const [language, setLanguage] = useState('DE')
+  const [page, setPage] = useState('main');
+  const [language, setLanguage] = useState('DE')
 
-const updatePage = e => setPage(e.target.id)
+  const updatePage = e => setPage(e.target.id)
 
-const updateLanguage = e => setLanguage(e.target.id)
+  const updateLanguage = e => setLanguage(e.target.id)
 
   return (
     <div className="App">
@@ -23,6 +23,7 @@ const updateLanguage = e => setLanguage(e.target.id)
       <Navbar
        updatePage = {updatePage}
        updateLanguage = {updateLanguage}
+       language = {language}
        />
     {page ==='main' &&  <Main/> }
     {page ==='nav__events' &&  <Events/> }
