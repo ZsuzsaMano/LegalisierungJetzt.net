@@ -8,6 +8,7 @@ const Main = () => {
 
         <iframe
             src="https://player.twitch.tv/?channel=legalisierungjetzt&parent=legalisierungjetzt.net&autoplay=true"
+            title="press conference"
             frameBorder="2"
             scrolling="no"
             allowFullScreen={true}>

@@ -8,6 +8,7 @@ const Materials = () => {
       <div className="material">
       <h3>12.10.2020, 11h Aquarium Berlin Presskonferenz</h3>
       <iframe src="https://player.twitch.tv/?channel=legalisierungjetzt&parent=legalisierungjetzt.net&autoplay=true"       frameBorder="2"
+            title="press conference"
             scrolling="no"
             allowFullScreen={true}>
       </iframe>
