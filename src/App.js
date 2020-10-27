@@ -10,19 +10,20 @@ import Materials from './components/Materials';
 function App() {
 
 const [page, setPage] = useState('main');
-const [active, setActive] = useState(false);
+const [language, setLanguage] = useState('DE')
 
 const updatePage = e => setPage(e.target.id)
+
+const updateLanguage = e => setLanguage(e.target.id)
 
   return (
     <div className="App">
       <Hero
        updatePage={updatePage}/>
       <Navbar
-       page={page}
        updatePage = {updatePage}
-       active = {active}
-       setActive = {setActive}/>
+       updateLanguage = {updateLanguage}
+       />
     {page ==='main' &&  <Main/> }
     {page ==='nav__events' &&  <Events/> }
     {page ==='nav__materials' &&  <Materials/> }

@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Navbar = ({ page,  updatePage, active, setActive }) =>
+const Navbar = ({ updatePage, updateLanguage }) =>
   {
   return (
       <nav>
