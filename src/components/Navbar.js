@@ -1,21 +1,14 @@
 import React from 'react';
 
-const Navbar = () => {
+const Navbar = ({ page,  updatePage, active, setActive }) =>
+  {
   return (
       <nav>
         <ul>
-          <a href="./letter.html">
-            <li id="nav__letter">Brief</li>
-          </a>
-
-          <a href="./events.html">
-            <li id="nav__events">Termine</li>
-          </a>
-          <a href="./materials.html" >
-            <li id="nav__materials">Materialen</li>
-          </a>
-
-            <li>
+            <li id="nav__letter" onClick = {updatePage}>Brief</li>
+            <li id="nav__events" onClick = {updatePage}> Termine</li>
+            <li id="nav__materials" onClick = {updatePage}>Materialen</li>
+                    <li>
             <ul className="languages">
                <li id="DE" className="languages__tab">DE</li>
                <li id="EN" className="languages__tab">EN</li>
