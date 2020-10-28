@@ -1,6 +1,10 @@
 const languagesObject = {
   DE: {
-    nav: ['Brief', 'Termine', 'Materialien'],
+    nav: {
+      nav__letter: 'Brief',
+      nav__events: 'Termine',
+      nav__materials: 'Materialien'
+    },
     title: `Offener Brief \n für die dauerhafte, bedingungslose Legalisierung aller undokumentierten, sich in illegalisierten Bedingungen befindlichen migrantischen Personen`,
     letter: `Der aktuelle Kontext drängt uns heute dazu, als Netzwerk von Kollektiven und Organisationen von Migrant*innen und Anti-Rassist*innen die dauerhafte und bedingungslose Legalisierung aller migrantischen Personen ohne Aufenthaltsgenehmigung in diesem Land zu fordern.
 
@@ -35,7 +39,11 @@ Die aktuelle Krise zeigt mit größter Klarheit, dass niemand von den fundamenta
     signatories: 'Unterschriften',
   },
   EN: {
-    nav: ['Letter', 'Events', 'Materials'],
+    nav: {
+      nav__letter: 'Letter',
+      nav__events: 'Events',
+      nav__materials: 'Materials'
+    },
     title: 'OPEN LETTER \n  FOR THE PERMANENT AND UNCONDITIONAL LEGALISATION OF ALL UNDOCUMENTED AND ILLEGALISED MIGRANTS',
     letter: `The current situation calls on us as a network of migrant and anti-racist groups and organizations in Berlin to demand the permanent and unconditional legalization of all migrants without residence documents in this country.
 
@@ -70,7 +78,11 @@ Join us to demand legalization; the current crisis shows more clearly that no on
     signatories: 'Signatories',
   },
   ES: {
-    nav: ['Carta', 'Eventos', 'Materiales'],
+    nav: {
+      nav__letter: 'Carta',
+      nav__events: 'Eventos',
+      nav__materials: 'Materiales'
+    },
     title: 'CARTA ABIERTA\n POR LA LEGALIZACIÓN PERMANENTE Y SIN CONDICIONES DE TODAS LAS PERSONAS MIGRANTES INDOCUMENTADAS Y EN CONDICIÓN DE ILEGALIDAD',
     letter: `Hoy, el contexto actual nos convoca como red de colectivos y organizaciones de migrantes y antirracistas de Berlín a demandar la legalización permanente y sin condiciones de todas las personas migrantes sin documentos de residencia en este país.
 
