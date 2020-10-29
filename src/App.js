@@ -21,6 +21,7 @@ function App() {
       <Hero
        updatePage={updatePage}/>
       <Navbar
+       page={page}
        updatePage = {updatePage}
        updateLanguage = {updateLanguage}
        language = {language}

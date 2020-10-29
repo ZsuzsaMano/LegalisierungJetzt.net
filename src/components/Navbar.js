@@ -1,14 +1,25 @@
 import React from 'react';
 import languagesObject from '../languagesObject';
 
-const Navbar = ({ updatePage, updateLanguage, language }) =>
-  {
+const Navbar = ({ page, updatePage, updateLanguage, language }) => {
+  const pages = [
+    {id: 'nav__letter'},
+    {id: 'nav__events'},
+    {id: 'nav__materials'}
+  ];
+
   return (
       <nav>
         <ul>
-            <li id="nav__letter" onClick = {updatePage}>{languagesObject.[language].nav[0]}</li>
-            <li id="nav__events" onClick = {updatePage}> {languagesObject.[language].nav[1]}</li>
-            <li id="nav__materials" onClick = {updatePage}>{languagesObject.[language].nav[2]}</li>
+            {pages.map((p, index) => (
+              <li
+                id={p.id}
+                className={page === p.id ? 'active' : ''}
+                onClick = {updatePage}
+              >
+                {languagesObject[language].nav[p.id]}
+              </li>
+            ))}
                     <li>
             <ul className="languages">
                <li id="DE" className="languages__tab" onClick = {updateLanguage}>DE</li>
