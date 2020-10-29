@@ -1,3 +1,9 @@
+#Sass autocompile
+
+I use this to autocompile all styles into styles.min.css
+https://atom.io/packages/sass-autocompile
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
