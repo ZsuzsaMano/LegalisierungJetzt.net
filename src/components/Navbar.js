@@ -19,7 +19,7 @@ const Navbar = ({ page, updatePage, updateLanguage, language }) => {
                 {languagesObject[language].nav[p.id]}
               </li>
             ))}
-          
+
             <ul className="languages">
                <li id="DE" className="languages__tab" onClick = {updateLanguage}>DE</li>
                <li id="EN" className="languages__tab" onClick = {updateLanguage}>EN</li>
