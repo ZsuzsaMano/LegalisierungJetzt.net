@@ -69,7 +69,11 @@ const Letter = ({ language }) => {
           RaumErweiterungsHalle,
           We'll come united Berlin / Brandenburg,
           association14a,
-          FAU Berlin </p>
+          FAU Berlin,
+          Justizwatch, Lampedusa Berlin,
+          unter_bau,
+          trixiewiz e.V.,
+          Sudan Uprising Germany Team  </p>
         </div>
     </main>
   );
