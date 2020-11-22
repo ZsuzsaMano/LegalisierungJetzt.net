@@ -6,6 +6,7 @@ import Events from './components/Events';
 import Letter from './components/Letter';
 import Main from './components/Main';
 import Materials from './components/Materials';
+import Footer from './components/Footer';
 
 function App() {
 
@@ -34,7 +35,7 @@ function App() {
     language = {language}/> }
     {page ==='nav__letter' &&  <Letter
     language = {language}/> }
-
+    <Footer/>
 
 
 

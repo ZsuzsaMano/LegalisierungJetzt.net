@@ -1,7 +1,18 @@
 //main: style.scss
 
 footer{
+  @include flex(center, center, row);
   background: black;
   color:$lila;
+  padding: 1rem;
   text-shadow:  2px 2px 2px rgba(200, 200, 200, 0.9);
+  a{
+    width: 50px;
+    height: 50px;
+  }
+  svg{
+  fill:$lila;
+  width: 100%;
+  height: 100%;
+  }
 }
