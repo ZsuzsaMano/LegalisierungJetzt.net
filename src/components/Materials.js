@@ -8,10 +8,7 @@ const Materials = ({ language }) => {
     <section className="dark-box">
       <div className="material">
       <h3>12.10.2020, 11h Aquarium Berlin Presskonferenz</h3>
-      <iframe src="https://player.twitch.tv/?channel=legalisierungjetzt&parent=legalisierungjetzt.net&autoplay=true"       frameBorder="2"
-            title="press conference"
-            scrolling="no"
-            allowFullScreen={true}>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/q4HM1sDtz6I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </iframe>
       </div>
       <div className="lettersToDownload">
