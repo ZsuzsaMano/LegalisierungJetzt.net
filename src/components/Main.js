@@ -7,7 +7,7 @@ const Main = () => {
         <h2 className="video__title title">Presskonferenz 12.10.2020, 11h Aquarium Berlin</h2>
 
         <iframe
-            src="https://player.twitch.tv/?channel=legalisierungjetzt&parent=legalisierungjetzt.net&autoplay=true"
+            src="https://www.youtube.com/watch?v=q4HM1sDtz6I&feature=youtu.be"
             title="press conference"
             frameBorder="2"
             scrolling="no"
