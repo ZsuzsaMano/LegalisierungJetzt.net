@@ -7,7 +7,11 @@ const Events = ({language}) => {
 
         <h2 className="event__title title" id="event__title">{languagesObject.[language].nav.nav__events}</h2>
       <section className="dark-box">
-        <p>12.10.2020, 11h Aquarium Berlin Presskonferenz</p>
+      <ul>
+        <li>Weitere Termine folgen in Kürze!</li>
+        <li>21.11.2020: Perreo Combativo - kämpferischer Tanz für die Sichtbarkeit und Legalisierung von Menschen ohne Papiere. </li>
+        <li>12.10.2020: Pressekonferenz - Auftakt der Kampagne "Legalisierung Jetzt"</li>
+      </ul>
       </section>
 
     </main>

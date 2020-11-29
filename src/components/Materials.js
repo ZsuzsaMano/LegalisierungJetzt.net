@@ -9,7 +9,6 @@ const Materials = ({ language }) => {
       <div className="material">
       <h3>12.10.2020, 11h Aquarium Berlin Presskonferenz</h3>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/q4HM1sDtz6I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </iframe>
       </div>
       <div className="lettersToDownload">
         <h3>Brief in anderen Sprachen herunterladen</h3>
@@ -39,6 +38,9 @@ const Materials = ({ language }) => {
             <a href="https://www1.wdr.de/radio/cosmo/programm/sendungen/estacionsur/deutschland/-wdr-legalisierung-jetzt-campana-102.html">
   WDR, estacíon sur, 13.10.2020: Campaña “Legalisierung Jetzt!” Por un país sin invisibles
   </a>
+  </li>
+  <li>
+    <a href="https://radiocorax.de/legalisierung-jetzt-gespraech-zur-kampagne-mit-respect-berlin/">#Legalisierung Jetzt! Gespräch zur Kampagne mit Respect Berlin, Radio Coray, 24.11.2020</a>
   </li>
         </ul>
       </div>
