@@ -5,9 +5,9 @@ const Hero = ({ updatePage }) =>
 {
   return (
     <header>
-      <span>Close the gap</span>
+      <span className= "hero__text">Close the gap</span>
       <img className="header__logo" src={Logo} alt="logo" id="main" onClick={updatePage}/>
-      <span>Open the borders</span>
+      <span className= "hero__text">Open the borders</span>
     </header>
 
   );
