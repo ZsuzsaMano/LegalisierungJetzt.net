@@ -1,6 +1,11 @@
 //main: style.scss
 
-.press__list{
+.press__list {
   list-style-type: square;
   list-style-position: inside;
+}
+
+iframe {
+  width: clamp(200px, 90%, 560px);
+  height: clamp(110px, 50%, 315px);
 }

@@ -8,7 +8,7 @@ const Materials = ({ language }) => {
     <section className="dark-box">
       <div className="material">
       <h3>12.10.2020, 11h Aquarium Berlin Presskonferenz</h3>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/q4HM1sDtz6I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe  src="https://www.youtube.com/embed/q4HM1sDtz6I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
       <div className="lettersToDownload">
         <h3>Brief in anderen Sprachen herunterladen</h3>
