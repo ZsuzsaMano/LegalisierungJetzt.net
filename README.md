@@ -1,4 +1,4 @@
-#Sass autocompile
+# Sass autocompile
 
 I use this to autocompile all styles into styles.min.css
 https://atom.io/packages/sass-autocompile
