@@ -1,14 +1,83 @@
-# Sass autocompile
+
+<p align="center">
+  <a href="https://legalisierungjetzt.net/">
+    <img src="./src/img/hero.png" alt="Logo" >
+  </a>
+</p>
+
+# Legalisierung Jetzt
+
+Refugees Welcome
+
+  <a href="https://legalisierungjetzt.net/">
+legalisierungjetzt.net
+  </a>
+<br/>
+<br/>
+
+
+
+
+
+***
+### Summary
+
+The website of an important movement to give equal rights for all human beings
+
+<p align="center">
+Made with:  React, Sass, and a lot of team work, love and compassion
+</p>
+
+***
+
+### Languages
+
+The page is available in 3 languages:
+<ul>
+<li>German</li>
+<li>English</li>
+<li>Spanish</li>
+</ul>
+
+If you would like to add an another language you are welcome to contact the team:
+ legalisierung_jetzt@riseup.net
+
+***
+
+### Content
+
+<ul>
+<li>Open Letter</li>
+<li>Upcoming and past Events</li>
+<li>Materials //Press, videos...</li>
+<li>Contact</li>
+<li>Spendenkonto</li>
+</ul>
+
+***
+***
+
+# Development
+
+It is an open source project. Contributions are welcome!
+
+If you are interested, you can open an issue you would like to work on, or contact the team for more information.
+
+ legalisierung_jetzt@riseup.net
+
+
+## Sass autocompile
 
 I use this to autocompile all styles into styles.min.css
 https://atom.io/packages/sass-autocompile
 
 
-# Getting Started with Create React App
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+### Available Scripts
 
 In the project directory, you can run:
 
@@ -45,7 +114,7 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+### Learn More
 
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
