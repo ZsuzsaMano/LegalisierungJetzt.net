@@ -1,4 +1,12 @@
 import React, {useEffect, useState} from 'react';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import LegalisierungContextProvider from './context/LegalisierungContext';
+
 import './styles/style.min.css';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
@@ -8,38 +16,35 @@ import Main from './components/Main';
 import Materials from './components/Materials';
 import Footer from './components/Footer';
 
-function App() {
-
-  const [page, setPage] = useState('main');
-  const [language, setLanguage] = useState('DE')
-
-  const updatePage = e => setPage(e.target.id)
-
-  const updateLanguage = e => setLanguage(e.target.id)
+const App = (props) => {
 
   return (
+      <LegalisierungContextProvider>
     <div className="App">
-      <Hero
-       updatePage={updatePage}/>
-      <Navbar
-       page={page}
-       updatePage = {updatePage}
-       updateLanguage = {updateLanguage}
-       language = {language}
-       />
-    {page ==='main' &&  <Main
-    language = {language}/> }
-    {page ==='nav__events' &&  <Events
-    language = {language}/> }
-    {page ==='nav__materials' &&  <Materials
-    language = {language}/> }
-    {page ==='nav__letter' &&  <Letter
-    language = {language}/> }
+      <Router>
+        <Link to="/">
+        <Hero/>
+        </Link>
+
+      <Navbar/>
+      <Switch>
+      <Route exact path="/">
+        <Main/>
+      </Route>
+      <Route path="/events">
+        <Events/>
+      </Route>
+      <Route path="/materials">
+         <Materials/>
+      </Route>
+      <Route path="/letter">
+         <Letter/>
+      </Route>
+      </Switch>
+    </Router>
     <Footer/>
-
-
-
     </div>
+      </LegalisierungContextProvider>
   );
 }
 

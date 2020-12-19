@@ -1,7 +1,11 @@
-import React from 'react';
+import React, {useContext} from 'react';
+import {LegalisierungContext} from '../context/LegalisierungContext';
 import languagesObject from '../languagesObject';
 
-const Letter = ({ language }) => {
+
+const Letter = () => {
+  const {language} = useContext(LegalisierungContext);
+
   return(
     <main className="letter">
       <article className="letter__article">

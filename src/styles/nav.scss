@@ -1,29 +1,33 @@
 //main: style.scss
 
-.languages > *{
+.languages > * {
   padding: 5px;
   color: white;
   cursor: pointer;
   font-size: 1.2rem;
 }
 
-nav{
-background: #222;
-padding: 1em;
-  ul{
-  list-style: none;
-  @include flex(space-around, center, row);
-  & > li:hover{
-    transform: scale(1.1);
-    border-bottom: 2px solid $lila;
-  }
-  & > li.active{
-    border-bottom: 2px solid $lila;
-  }
-  & > *{
-    color:white;
-    font-size: 1.4rem;
-    transition: all 250ms ease-in;
-  }
+nav {
+  background: #222;
+  padding: 1em;
+
+  ul {
+    list-style: none;
+    @include flex(space-around, center, row);
+
+    & > li:hover {
+      transform: scale(1.1);
+      border-bottom: 2px solid $lila;
+    }
+
+    & > li a.activeRoute {
+      border-bottom: 2px solid $lila;
+    }
+
+    & > * {
+      color: white;
+      font-size: 1.4rem;
+      transition: all 250ms ease-in;
+    }
   }
 }

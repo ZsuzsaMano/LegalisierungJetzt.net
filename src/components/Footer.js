@@ -1,4 +1,6 @@
-import React from 'react';
+import React, {useContext} from 'react';
+import {LegalisierungContext} from '../context/LegalisierungContext';
+import languagesObject from '../languagesObject';
 import Twitter from '../img/twitter.svg';
 import Facebook from '../img/facebook.svg';
 

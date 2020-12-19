@@ -9,3 +9,7 @@ iframe {
   width: clamp(200px, 90%, 560px);
   height: clamp(110px, 50%, 315px);
 }
+
+.material img {
+  max-width: 300px;
+}

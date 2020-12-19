@@ -1,10 +1,13 @@
-import React from 'react';
+import React, {useContext} from 'react';
+import {LegalisierungContext} from '../context/LegalisierungContext';
+import languagesObject from '../languagesObject';
+import img1 from '../img/Manos_grande.png';
 
 const Main = () => {
   return (
-    <main className="video">
-      <iframe  src="https://www.youtube.com/embed/q4HM1sDtz6I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-  </main>
+    <main className="home">
+      <img src={img1} alt="hands in front of logo"/>
+    </main>
   );
 };
 
