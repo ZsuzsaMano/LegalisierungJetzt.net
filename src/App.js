@@ -1,10 +1,11 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useState, Suspense} from 'react';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Link
 } from "react-router-dom";
+import './i18n';
 import LegalisierungContextProvider from './context/LegalisierungContext';
 
 import './styles/style.min.css';
@@ -19,6 +20,7 @@ import Footer from './components/Footer';
 const App = (props) => {
 
   return (
+     <Suspense fallback="loading">
       <LegalisierungContextProvider>
     <div className="App">
       <Router>
@@ -45,6 +47,7 @@ const App = (props) => {
     <Footer/>
     </div>
       </LegalisierungContextProvider>
+          </Suspense>
   );
 }
 
