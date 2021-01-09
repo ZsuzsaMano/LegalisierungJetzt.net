@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.924697ba.chunk.css",
-    "main.js": "/static/js/main.a71dd706.chunk.js",
-    "main.js.map": "/static/js/main.a71dd706.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.8e7152f1.js",
-    "runtime-main.js.map": "/static/js/runtime-main.8e7152f1.js.map",
-    "static/js/2.c2dc2cfe.chunk.js": "/static/js/2.c2dc2cfe.chunk.js",
-    "static/js/2.c2dc2cfe.chunk.js.map": "/static/js/2.c2dc2cfe.chunk.js.map",
-    "static/js/3.e377cc44.chunk.js": "/static/js/3.e377cc44.chunk.js",
-    "static/js/3.e377cc44.chunk.js.map": "/static/js/3.e377cc44.chunk.js.map",
+    "main.css": "/static/css/main.1064139f.chunk.css",
+    "main.js": "/static/js/main.be1b5eed.chunk.js",
+    "main.js.map": "/static/js/main.be1b5eed.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.e015fef1.js",
+    "runtime-main.js.map": "/static/js/runtime-main.e015fef1.js.map",
+    "static/js/2.a31dd7f6.chunk.js": "/static/js/2.a31dd7f6.chunk.js",
+    "static/js/2.a31dd7f6.chunk.js.map": "/static/js/2.a31dd7f6.chunk.js.map",
+    "static/js/3.4261c500.chunk.js": "/static/js/3.4261c500.chunk.js",
+    "static/js/3.4261c500.chunk.js.map": "/static/js/3.4261c500.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.924697ba.chunk.css.map": "/static/css/main.924697ba.chunk.css.map",
-    "static/js/2.c2dc2cfe.chunk.js.LICENSE.txt": "/static/js/2.c2dc2cfe.chunk.js.LICENSE.txt",
+    "static/css/main.1064139f.chunk.css.map": "/static/css/main.1064139f.chunk.css.map",
+    "static/js/2.a31dd7f6.chunk.js.LICENSE.txt": "/static/js/2.a31dd7f6.chunk.js.LICENSE.txt",
     "static/media/Carta Abierta Legalisierung_Jetzt.891497d0.pdf": "/static/media/Carta Abierta Legalisierung_Jetzt.891497d0.pdf",
     "static/media/style.min.css": "/static/media/Illegal.6b9da9aa.png",
-    "static/media/Manos_grande.4e65cabc.png": "/static/media/Manos_grande.4e65cabc.png",
+    "static/media/Manos_grande.1801e71b.png": "/static/media/Manos_grande.1801e71b.png",
     "static/media/Offener Brief Legalisierung_Jetzt.471f7c16.pdf": "/static/media/Offener Brief Legalisierung_Jetzt.471f7c16.pdf",
     "static/media/Open Letter Legalisierung_Jetzt.a83ec5d9.pdf": "/static/media/Open Letter Legalisierung_Jetzt.a83ec5d9.pdf",
     "static/media/Perreo comabativo-hbf.90b46f36.jpg": "/static/media/Perreo comabativo-hbf.90b46f36.jpg",
@@ -22,13 +22,14 @@
     "static/media/Washingtonplatz_Coreo.4418efc7.jpg": "/static/media/Washingtonplatz_Coreo.4418efc7.jpg",
     "static/media/Washingtonplatz_Schilder.864edb2c.jpg": "/static/media/Washingtonplatz_Schilder.864edb2c.jpg",
     "static/media/facebook.4572f314.svg": "/static/media/facebook.4572f314.svg",
+    "static/media/getFetch.cjs": "/static/media/getFetch.d7d6010d.cjs",
     "static/media/logo.a55727e4.png": "/static/media/logo.a55727e4.png",
     "static/media/twitter.ca6dab93.svg": "/static/media/twitter.ca6dab93.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.8e7152f1.js",
-    "static/js/2.c2dc2cfe.chunk.js",
-    "static/css/main.924697ba.chunk.css",
-    "static/js/main.a71dd706.chunk.js"
+    "static/js/runtime-main.e015fef1.js",
+    "static/js/2.a31dd7f6.chunk.js",
+    "static/css/main.1064139f.chunk.css",
+    "static/js/main.be1b5eed.chunk.js"
   ]
 }

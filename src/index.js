@@ -1,9 +1,9 @@
-import React, { Component } from "react";
+import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import './i18n';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import './i18n';
 
 ReactDOM.render(
   <React.StrictMode>

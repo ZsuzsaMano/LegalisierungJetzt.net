@@ -1,14 +1,15 @@
-import React, {useEffect, useState, Suspense} from 'react';
+import './i18n';
+import React, { Suspense } from 'react';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
   Link
-} from "react-router-dom";
-import './i18n';
+} from 'react-router-dom';
 import LegalisierungContextProvider from './context/LegalisierungContext';
 
 import './styles/style.min.css';
+import PopupModal from './components/PopupModal';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 import Events from './components/Events';
@@ -21,7 +22,9 @@ const App = (props) => {
 
   return (
      <Suspense fallback="loading">
+
       <LegalisierungContextProvider>
+        <PopupModal/>
     <div className="App">
       <Router>
         <Link to="/">
@@ -49,6 +52,6 @@ const App = (props) => {
       </LegalisierungContextProvider>
           </Suspense>
   );
-}
+};
 
 export default App;
