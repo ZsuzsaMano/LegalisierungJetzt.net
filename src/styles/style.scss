@@ -19,6 +19,10 @@ $text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);
   flex-direction: $direction;
 }
 
+.displaynone{
+  display: none;
+}
+
 .dark-box {
   max-width: 972px;
   margin: 0 auto 2rem;
@@ -46,6 +50,7 @@ $text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);
 @import 'events';
 @import 'nav';
 @import 'footer';
+@import 'popup';
 
 .video iframe {
   width: clamp(320px, 96vw, 640px);

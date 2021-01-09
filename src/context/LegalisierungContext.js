@@ -1,18 +1,15 @@
-import React, {createContext, useState} from 'react'
-import PropTypes from 'prop-types';
-
+import React, { createContext, useState } from 'react';
 
 export const LegalisierungContext = createContext();
 
 const LegalisierungContextProvider = (props) => {
-  const [language, setLanguage] = useState('DE')
-  const updateLanguage = e => setLanguage(e.target.id)
+  const [language, setLanguage] = useState('DE');
 
   return (
-    <LegalisierungContext.Provider value={{language, setLanguage, updateLanguage}}>
+    <LegalisierungContext.Provider value={{ language, setLanguage }}>
     {props.children}
     </LegalisierungContext.Provider>
-  )
-}
+  );
+};
 
 export default LegalisierungContextProvider;
