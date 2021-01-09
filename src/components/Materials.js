@@ -11,7 +11,7 @@ import img5 from '../img/Perreo Combativo/Washingtonplatz_Schilder.jpg'
 
 
 const Materials = () => {
-  const {language,setLanguage, updateLanguage} = useContext(LegalisierungContext);
+  const {language} = useContext(LegalisierungContext);
 
   return (
     <main className="materials">
@@ -25,13 +25,13 @@ const Materials = () => {
         <img src={img5} alt=""/>
 
       <h3>12.10.2020, 11h Aquarium Berlin Presskonferenz</h3>
-<iframe  src="https://www.youtube.com/embed/q4HM1sDtz6I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe  src="https://www.youtube.com/embed/q4HM1sDtz6I" title= "Presskonferenz" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
       <div className="lettersToDownload">
         <h3>Brief in anderen Sprachen herunterladen</h3>
-        <a href={pdfEn} target="_blank"> -> English </a><br/>
-        <a href={pdfEs} target="_blank"> -> Espanol </a><br/>
-        <a href={pdfDe} target="_blank"> -> Deutsch </a><br/>
+        <a href={pdfEn} rel="noreferrer" target="_blank"> -> English </a><br/>
+        <a href={pdfEs} rel="noreferrer" target="_blank"> -> Espanol </a><br/>
+        <a href={pdfDe} rel="noreferrer" target="_blank"> -> Deutsch </a><br/>
       </div>
       <div className="links">
         <h3 className="press__title">Press</h3>

@@ -1,18 +1,16 @@
-import React, {useContext} from 'react';
-import {LegalisierungContext} from '../context/LegalisierungContext';
-import languagesObject from '../languagesObject';
+import React from 'react';
 import Twitter from '../img/twitter.svg';
 import Facebook from '../img/facebook.svg';
 
 const Footer = () => {
-  return(
+  return (
     <footer>
     <div className="footer__social">
     <a href="legalisierung_jetzt@riseup.net" target="_blank">Email</a>
-    <a href="https://www.facebook.com/legalisierungjetzt/" target="_blank">Facebook</a>
+    <a href="https://www.facebook.com/legalisierungjetzt/" rel="noreferrer" target="_blank">Facebook</a>
 
-    <a href="https://twitter.com/legaljetzt" target="_blank">Twitter</a>
-    <a href="https://www.instagram.com/legalisierung_jetzt/" target="_blank">Instagram</a>
+    <a href="https://twitter.com/legaljetzt" rel="noreferrer" target="_blank">Twitter</a>
+    <a href="https://www.instagram.com/legalisierung_jetzt/" rel="noreferrer" target="_blank">Instagram</a>
 </div>
 <div className="footer__spende">
 <p>
@@ -27,7 +25,7 @@ Spenden sind leider nicht steuerlich absetzbar. Sie fließen in die Umsetzung de
 </div>
     </footer>
 
-  )
-}
+  );
+};
 
 export default Footer;

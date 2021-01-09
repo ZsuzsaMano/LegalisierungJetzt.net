@@ -1,6 +1,4 @@
-import React, {useContext} from 'react';
-import {LegalisierungContext} from '../context/LegalisierungContext';
-import languagesObject from '../languagesObject';
+import React from 'react';
 import img1 from '../img/Manos_grande.png';
 
 const Main = () => {
