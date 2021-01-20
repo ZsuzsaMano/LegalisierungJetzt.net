@@ -4,9 +4,9 @@ import { LegalisierungContext } from '../context/LegalisierungContext';
 
 const PopupModal = (props) => {
     const [isChoosen, setIsChoosen] = useState(false);
-    const {
+//    const {
 //      t,
-      i18n } = useTranslation();
+//      i18n } = useTranslation();
 
     const { setLanguage } = useContext(LegalisierungContext);
 
