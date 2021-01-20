@@ -42,7 +42,7 @@ Die aktuelle Krise zeigt mit größter Klarheit, dass niemand von den fundamenta
 
     21. November 2020: Perreo Combativo - kämpferischer Tanz für die Sichtbarkeit und Legalisierung von Menschen ohne Papiere.
 
-    12. Oktober 2020: Pressekonferenz - Auftakt der Kampagne \"Legalisierung Jetzt\"
+    12. Oktober 2020: Pressekonferenz - Auftakt der Kampagne "Legalisierung Jetzt"
 
 Jeden Monat findet eine Aktion der Kampagne statt. Mehr zu unseren aktuellen Aktionen und Veranstaltungen auf Facebook, Twitter und Instagram!`
   },

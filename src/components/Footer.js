@@ -1,6 +1,6 @@
 import React from 'react';
-import Twitter from '../img/twitter.svg';
-import Facebook from '../img/facebook.svg';
+//import Twitter from '../img/twitter.svg';
+//import Facebook from '../img/facebook.svg';
 
 const Footer = () => {
   return (

@@ -1,4 +1,4 @@
-import { useTranslation, Trans } from 'react-i18next';
+//import { useTranslation, Trans } from 'react-i18next';
 import React, {useContext} from 'react';
 import {LegalisierungContext} from '../context/LegalisierungContext';
 import languagesObject from '../languagesObject';
@@ -6,7 +6,7 @@ import languagesObject from '../languagesObject';
 
 const Events = () => {
   const {language} = useContext(LegalisierungContext);
-    const { t, i18n } = useTranslation();
+  //  const { t, i18n } = useTranslation();
 
   return(
     <main className="event">
