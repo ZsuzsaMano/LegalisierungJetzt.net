@@ -1,5 +1,5 @@
 import React, { useState, useContext } from 'react';
-import { useTranslation } from 'react-i18next';
+//import { useTranslation } from 'react-i18next';
 import { LegalisierungContext } from '../context/LegalisierungContext';
 
 const PopupModal = (props) => {
