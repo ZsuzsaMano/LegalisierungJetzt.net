@@ -7,7 +7,7 @@ const LegalisierungContextProvider = (props) => {
 
   return (
     <LegalisierungContext.Provider value={{ language, setLanguage }}>
-    {props.children}
+      {props.children}
     </LegalisierungContext.Provider>
   );
 };
