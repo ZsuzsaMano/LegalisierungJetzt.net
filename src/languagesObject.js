@@ -37,14 +37,17 @@ LEGALISIERUNG JETZT!
 
 Die aktuelle Krise zeigt mit größter Klarheit, dass niemand von den fundamentalen sozialen Rechten ausgeschlossen werden darf! Fordert deshalb mit uns die Legalisierung aller Menschen ohne Aufenthaltsdokumente!`,
     signatories: 'Unterschriften',
-    event:
-    `18. Dezember 2020: Künstlerische Intervention an verschiedenen Orten in Berlin - gegen den Paragraphen 87 und die Kriminalisierung von undokumentierten Menschen.
+    past_events:`18. Dezember 2020: Künstlerische Intervention an verschiedenen Orten in Berlin - gegen den Paragraphen 87 und die Kriminalisierung von undokumentierten Menschen.
 
     21. November 2020: Perreo Combativo - kämpferischer Tanz für die Sichtbarkeit und Legalisierung von Menschen ohne Papiere.
 
-    12. Oktober 2020: Pressekonferenz - Auftakt der Kampagne \"Legalisierung Jetzt\"
+    12. Oktober 2020: Pressekonferenz - Auftakt der Kampagne "Legalisierung Jetzt"`,
 
-Jeden Monat findet eine Aktion der Kampagne statt. Mehr zu unseren aktuellen Aktionen und Veranstaltungen auf Facebook, Twitter und Instagram!`
+    upcoming_events:`28 Januar 2021: Online-Pressekonferenz: Die Situation von illegalisierten Migrant*innen im zweiten Lockdown.`,
+
+    events_foot:`Jeden Monat findet eine Aktion der Kampagne statt. Mehr zu unseren aktuellen Aktionen und Veranstaltungen auf Facebook, Twitter und Instagram!`,
+    title__upcoming__events: 'Anstehende Termine',
+    title__past__events: 'Vergangene Termine',
   },
   EN: {
     nav: {
@@ -84,12 +87,16 @@ LEGALISATION NOW!
 
 Join us to demand legalization; the current crisis shows more clearly that no one should be excluded from fundamental social rights!`,
     signatories: 'Signatories',
-    event:`
-    December 18, 2020: Artistic intervention at different locations in Berlin - against paragraph 87 and the criminalization of undocumented people.
-    November 21, 2020: Perreo Combativo - combative dance for the visibility and legalization of people without papers.
-    October 12, 2020: Press conference - launch of the campaign "Legalisierung Jetzt".
+    past_events:`December 18, 2020: Artistic intervention at different locations in Berlin - against paragraph 87 and the criminalization of undocumented people.
 
-Every month, there is one such action by the campaign. More on our current events and interventions on Facebook, Twitter and Instagram!`
+    November 21, 2020: Perreo Combativo - combative dance for the visibility and legalization of people without papers.
+
+    October 12, 2020: Press conference - launch of the campaign "Legalisierung Jetzt".`,
+
+    upcoming_events:`January 28, 2021: Online Press Conference: The situation of illegalised migrants during the second lockdown.`,
+    events_foot:`Every month, there is one such action by the campaign. More on our current events and interventions on Facebook, Twitter and Instagram!`,
+    title__upcoming__events: 'Upcoming Events',
+    title__past__events: 'Past Events',
   },
   ES: {
     nav: {
@@ -125,12 +132,16 @@ LEGALIZACIÓN YA!
 
 ¡Súmate a exigir con nosotres la legalización; hoy la crisis actual muestra con mayor claridad que nadie debe ser excluido de los derechos sociales fundamentales!`,
     signatories: 'Firmantes',
-    event: `
-    18 de diciembre 2020: Intervención artística descentralizada en diferentes lugares de Berlín - contra el párrafo 87 y la criminalización de las personas indocumentadas.
-    21 de noviembre 2020: Perreo Combativo - danza militante para la visibilidad y la legalización de lxs migrantes sin papeles.
-    12 de octubre 2020: Conferencia de prensa - lanzamiento de la campaña "Legalisierung Jetzt".
+    past_events: `18 de diciembre 2020: Intervención artística descentralizada en diferentes lugares de Berlín - contra el párrafo 87 y la criminalización de las personas indocumentadas.
 
-Todos los meses hay una acción de la campaña. Más información sobre estos eventos en Facebook, Twitter e Instagram!`
+    21 de noviembre 2020: Perreo Combativo - danza militante para la visibilidad y la legalización de lxs migrantes sin papeles.
+
+    12 de octubre 2020: Conferencia de prensa - lanzamiento de la campaña "Legalisierung Jetzt".`,
+
+    upcoming_events:`28 de enero 2021:  Conferencia de Prensa Virtual: La situación de la gente ilegalizada en el segundo lockdown.`,
+    events_foot:`Todos los meses hay una acción de la campaña. Más información sobre estos eventos en Facebook, Twitter e Instagram!`,
+    title__upcoming__events: 'Próximos Eventos',
+    title__past__events: 'Eventos Pasados',
   },
 };
 

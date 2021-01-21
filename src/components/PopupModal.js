@@ -1,10 +1,12 @@
 import React, { useState, useContext } from 'react';
-import { useTranslation } from 'react-i18next';
+//import { useTranslation } from 'react-i18next';
 import { LegalisierungContext } from '../context/LegalisierungContext';
 
 const PopupModal = (props) => {
     const [isChoosen, setIsChoosen] = useState(false);
-    const { t, i18n } = useTranslation();
+//    const {
+//      t,
+//      i18n } = useTranslation();
 
     const { setLanguage } = useContext(LegalisierungContext);
 
@@ -13,10 +15,10 @@ const PopupModal = (props) => {
       setIsChoosen(true);
     };
 
-    const updateLanguage2 = e => {
-      i18n.changeLanguage(e.target.id);
-      setIsChoosen(true);
-    };
+    // const updateLanguage2 = e => {
+    //   i18n.changeLanguage(e.target.id);
+    //   setIsChoosen(true);
+    // };
 
     return (
     <div className={isChoosen ? 'popup displaynone' : 'popup'}>
