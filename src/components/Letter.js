@@ -18,7 +18,7 @@ const Letter = () => {
       <div className="signatories">
         <h3 id="signatories">{languagesObject.[language].signatories}</h3>
         <p>
-          Respect Berlin,
+          {`Respect Berlin,
           Solidarity City Berlin,
           La Casita,
           La Pachangona,
@@ -78,8 +78,7 @@ const Letter = () => {
           Justizwatch, Lampedusa Berlin,
           unter_bau,
           trixiewiz e.V.,
-          Sudan Uprising Germany Team
-          {' '}
+          Sudan Uprising Germany Team`}
         </p>
       </div>
     </main>

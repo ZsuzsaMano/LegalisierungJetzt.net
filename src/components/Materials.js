@@ -1,3 +1,5 @@
+/* eslint-disable jsx-a11y/media-has-caption */
+/* eslint-disable max-len */
 import React, { useContext } from 'react';
 import { LegalisierungContext } from '../context/LegalisierungContext';
 import languagesObject from '../languagesObject';
@@ -46,7 +48,15 @@ const Materials = () => {
       <section className="dark-box" id="monthly_actions">
         <h2 className="materials__title title" id="materials__title">{languagesObject.[language].title_event_oct}</h2>
         <div className="VideoWrapper">
-          <iframe width="560" height="349" src="https://www.youtube.com/embed/q4HM1sDtz6I" title="Presskonferenz" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen />
+          <iframe
+            width="560"
+            height="349"
+            src="https://www.youtube.com/embed/q4HM1sDtz6I"
+            title="Presskonferenz"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
         </div>
       </section>
 
@@ -55,7 +65,11 @@ const Materials = () => {
           <h3 className="press__title">Press</h3>
           <ul className="press__list">
             <li>
-              <a href="https://m.tagesspiegel.de/berlin/ich-bete-jeden-tag-dass-es-mich-nicht-erwischt-was-die-pandemie-fuer-undokumentierte-migranten-bedeutet/26642734.html">Tagesspiegel was die pandemie fuer undokumentierte migranten bedeutet</a>
+              <a
+                href="https://m.tagesspiegel.de/berlin/ich-bete-jeden-tag-dass-es-mich-nicht-erwischt-was-die-pandemie-fuer-undokumentierte-migranten-bedeutet/26642734.html"
+              >
+                Tagesspiegel was die pandemie fuer undokumentierte migranten bedeutet
+              </a>
             </li>
             <li className="press__list-item">
               <a href="https://taz.de/Kampagne-Legalisierung-jetzt/!5719542/">
@@ -89,11 +103,11 @@ const Materials = () => {
 
         <div className="lettersToDownload">
           <h3>Brief in anderen Sprachen herunterladen</h3>
-          <a href={pdfEn} rel="noreferrer" target="_blank"> -> English </a>
+          <a href={pdfEn} rel="noreferrer" target="_blank">{'-> English'}</a>
           <br />
-          <a href={pdfEs} rel="noreferrer" target="_blank"> -> Espanol </a>
+          <a href={pdfEs} rel="noreferrer" target="_blank">{'-> Espanol'}</a>
           <br />
-          <a href={pdfDe} rel="noreferrer" target="_blank"> -> Deutsch </a>
+          <a href={pdfDe} rel="noreferrer" target="_blank">{'-> Deutsch'}</a>
           <br />
         </div>
 
