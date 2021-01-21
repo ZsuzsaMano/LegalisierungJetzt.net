@@ -56,8 +56,10 @@ $text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);
   width: clamp(320px, 96vw, 640px);
   height: clamp(200px, 60vw, 400px);
 }
+
 @media screen and (max-width:500px) {
   main {
     padding: 0.2rem;
   }
 }
+

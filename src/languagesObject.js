@@ -48,6 +48,9 @@ Die aktuelle Krise zeigt mit größter Klarheit, dass niemand von den fundamenta
     events_foot:`Jeden Monat findet eine Aktion der Kampagne statt. Mehr zu unseren aktuellen Aktionen und Veranstaltungen auf Facebook, Twitter und Instagram!`,
     title__upcoming__events: 'Anstehende Termine',
     title__past__events: 'Vergangene Termine',
+    title_event_oct:`Oktober - Start der Kampagne für Legalisierung Jetzt. Erste Pressekonferenz`,
+    title_event_nov:`November -  Kämpferischer Tanz (Perreo) am Berliner Hbf`,
+    title_event_dec:`Dezember - Künstlerische Intervention mit Figuren auf dem Alexanderplatz`
   },
   EN: {
     nav: {
@@ -97,6 +100,9 @@ Join us to demand legalization; the current crisis shows more clearly that no on
     events_foot:`Every month, there is one such action by the campaign. More on our current events and interventions on Facebook, Twitter and Instagram!`,
     title__upcoming__events: 'Upcoming Events',
     title__past__events: 'Past Events',
+    title_event_oct:`October - Start of the Campaign for Legalization Now. First Pressconference.`,
+    title_event_nov:`November - Combative Dance (Perreo) at the Central Station in Berlin`,
+    title_event_dec:`December - Artistic Intervention with Paper-Figures at Alexanderplatz`
   },
   ES: {
     nav: {
@@ -142,6 +148,9 @@ LEGALIZACIÓN YA!
     events_foot:`Todos los meses hay una acción de la campaña. Más información sobre estos eventos en Facebook, Twitter e Instagram!`,
     title__upcoming__events: 'Próximos Eventos',
     title__past__events: 'Eventos Pasados',
+    title_event_oct:`Octubre - Comienzo de la Campaña de Legalización Ya!.  Primera Conferencia de Prensa`,
+    title_event_nov:`Noviembre - Perreo Combativo en la Estación de Trenes de Berlin`,
+    title_event_dec:`Diciembre - Intervención Artística con Figuras de Cartón en Alexanderplatz`
   },
 };
 
