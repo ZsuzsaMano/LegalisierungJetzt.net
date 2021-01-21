@@ -4,11 +4,13 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
+  Link,
 } from 'react-router-dom';
 import LegalisierungContextProvider from './context/LegalisierungContext';
 
-import './styles/style.min.css';
+// TODO why do we have need a min?
+// import './styles/style.min.css';
+import './styles/style.scss';
 import PopupModal from './components/PopupModal';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
@@ -18,40 +20,37 @@ import Main from './components/Main';
 import Materials from './components/Materials';
 import Footer from './components/Footer';
 
-const App = (props) => {
+const App = () => (
+  <Suspense fallback="loading">
 
-  return (
-     <Suspense fallback="loading">
+    <LegalisierungContextProvider>
+      <PopupModal />
+      <div className="App">
+        <Router>
+          <Link to="/">
+            <Hero />
+          </Link>
 
-      <LegalisierungContextProvider>
-        <PopupModal/>
-    <div className="App">
-      <Router>
-        <Link to="/">
-        <Hero/>
-        </Link>
-
-      <Navbar/>
-      <Switch>
-      <Route exact path="/">
-        <Main/>
-      </Route>
-      <Route path="/events">
-        <Events/>
-      </Route>
-      <Route path="/materials">
-         <Materials/>
-      </Route>
-      <Route path="/letter">
-         <Letter/>
-      </Route>
-      </Switch>
-    </Router>
-    <Footer/>
-    </div>
-      </LegalisierungContextProvider>
-          </Suspense>
-  );
-};
+          <Navbar />
+          <Switch>
+            <Route exact path="/">
+              <Main />
+            </Route>
+            <Route path="/events">
+              <Events />
+            </Route>
+            <Route path="/materials">
+              <Materials />
+            </Route>
+            <Route path="/letter">
+              <Letter />
+            </Route>
+          </Switch>
+        </Router>
+        <Footer />
+      </div>
+    </LegalisierungContextProvider>
+  </Suspense>
+);
 
 export default App;

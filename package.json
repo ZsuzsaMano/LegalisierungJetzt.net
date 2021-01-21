@@ -6,9 +6,12 @@
     "@testing-library/jest-dom": "^5.11.5",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
+    "eslint": "^7.18.0",
+    "eslint-config-airbnb": "^18.2.1",
     "i18next": "^19.8.4",
     "i18next-browser-languagedetector": "^6.0.1",
     "i18next-http-backend": "^1.0.21",
+    "node-sass": "^4.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-i18next": "^11.8.5",
@@ -20,13 +23,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "eject": "react-scripts eject",
+    "lint": "node_modules/.bin/eslint src/**/*.js"
   },
   "browserslist": {
     "production": [
