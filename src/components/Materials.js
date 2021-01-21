@@ -8,6 +8,12 @@ import img2 from '../img/Perreo Combativo/Perreo comabativo-hbf.jpg'
 import img3 from '../img/Perreo Combativo/Perreo comabativo-hbf2.jpg'
 import img4 from '../img/Perreo Combativo/Washingtonplatz_Coreo.jpg'
 import img5 from '../img/Perreo Combativo/Washingtonplatz_Schilder.jpg'
+import img6 from '../img/december_action/Alexanderplatz.jpg'
+import img7 from '../img/december_action/Alexanderplatz_1.jpg'
+import img8 from '../img/december_action/Alexanderplatz_2.jpg'
+import vid1 from '../video/december_action/dec-action.mp4'
+
+
 
 
 const Materials = () => {
@@ -15,25 +21,41 @@ const Materials = () => {
 
   return (
     <main className="materials">
-      <h2 className="materials__title title" id="materials__title">{languagesObject.[language].nav.nav__materials}</h2>
-    <section className="dark-box">
+    <section className="dark-box" id="monthly-actions">
+      <h2 className="materials__title title" id="materials__title">{languagesObject.[language].title_event_dec}</h2>
       <div className="material">
-        <h3>Gallery</h3>
+          <img src={img6} alt=""/>
+          <img src={img7} alt=""/>
+          <img src={img8} alt=""/>
+        </div>
+
+        <div class="video">
+        <video id="december-video" width="640" height="480" controls>
+            <source src={vid1} type="video/mp4">
+            </source>
+        </video>
+    </div>
+    </section>
+
+    <section className="dark-box" id="monthly-actions">
+    <h2 className="materials__title title" id="materials__title">{languagesObject.[language].title_event_nov}</h2>
+      <div className="material">
         <img src={img2} alt=""/>
         <img src={img3} alt=""/>
         <img src={img4} alt=""/>
-        <img src={img5} alt=""/>
+        <img src={img5}  alt=""/>
+      </div>
+    </section>
 
-      <h3>12.10.2020, 11h Aquarium Berlin Presskonferenz</h3>
-<iframe  src="https://www.youtube.com/embed/q4HM1sDtz6I" title= "Presskonferenz" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-      </div>
-      <div className="lettersToDownload">
-        <h3>Brief in anderen Sprachen herunterladen</h3>
-        <a href={pdfEn} rel="noreferrer" target="_blank"> -> English </a><br/>
-        <a href={pdfEs} rel="noreferrer" target="_blank"> -> Espanol </a><br/>
-        <a href={pdfDe} rel="noreferrer" target="_blank"> -> Deutsch </a><br/>
-      </div>
-      <div className="links">
+    <section  className="dark-box" id="monthly_actions" >
+      <h2 className="materials__title title" id="materials__title">{languagesObject.[language].title_event_oct}</h2>
+        <div class="VideoWrapper">
+          <iframe width="560" height="349" src="https://www.youtube.com/embed/q4HM1sDtz6I" title= "Presskonferenz" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+        </div>
+    </section>
+
+    <section className="dark-box" id="press_info">
+    <div className="links">
         <h3 className="press__title">Press</h3>
         <ul className="press__list">
           <li>
@@ -63,6 +85,19 @@ const Materials = () => {
   </li>
         </ul>
       </div>
+
+    </section>
+
+
+    <section className="dark-box">
+
+      <div className="lettersToDownload">
+        <h3>Brief in anderen Sprachen herunterladen</h3>
+        <a href={pdfEn} rel="noreferrer" target="_blank"> -> English </a><br/>
+        <a href={pdfEs} rel="noreferrer" target="_blank"> -> Espanol </a><br/>
+        <a href={pdfDe} rel="noreferrer" target="_blank"> -> Deutsch </a><br/>
+      </div>
+
 
     </section>
 
