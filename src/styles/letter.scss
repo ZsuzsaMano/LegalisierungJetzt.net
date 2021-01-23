@@ -2,11 +2,15 @@
 
 header {
   @include flex(space-around, center, row);
+  margin-bottom: 50px;
 
-  span {
-    font-size: 3vw;
+  @media (max-width: 900px) {
+    margin-bottom: 10px;
   }
 
+  .hero__text{
+    font-size: 3vw;
+  }
   .header__logo {
     height: 100px;
   }

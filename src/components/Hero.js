@@ -7,7 +7,6 @@ const Hero = () => (
     <img className="header__logo" src={Logo} alt="logo" id="main" />
     <span className="hero__text">Open the borders</span>
   </header>
-
 );
 
 export default Hero;

@@ -30,7 +30,6 @@ const App = () => (
           <Link to="/">
             <Hero />
           </Link>
-
           <Navbar />
           <Switch>
             <Route exact path="/">
