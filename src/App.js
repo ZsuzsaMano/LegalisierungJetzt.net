@@ -7,10 +7,7 @@ import {
   Link,
 } from 'react-router-dom';
 import LegalisierungContextProvider from './context/LegalisierungContext';
-
-// TODO why do we have need a min?
-// import './styles/style.min.css';
-import './styles/style.scss';
+import './styles/style.min.css';
 import PopupModal from './components/PopupModal';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
