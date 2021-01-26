@@ -1,10 +1,10 @@
 import React, { useContext } from 'react';
-import { LegalisierungContext } from '../context/LegalisierungContext';
-import languagesObject from '../languagesObject';
+import { useTranslation} from 'react-i18next';
 import { NavLink } from 'react-router-dom';
 
 const Navbar = () => {
-  const { language } = useContext(LegalisierungContext);
+  const { t } = useTranslation();
+
 
   const pages = [
     { id: 'nav__letter', link: 'letter' },
@@ -18,8 +18,8 @@ const Navbar = () => {
         <ul>
             {pages.map((p, index) => (
               <li key={p.id}>
-                 <NavLink to={'/' + pages[index].link}
-                  activeClassName="activeRoute" >{t(['nav[p.id]'])}</NavLink>
+                 <NavLink to={`/${p.link}`}
+                  activeClassName="activeRoute" >{t(`nav.${p.id}`)}</NavLink>
              </li>
             ))}
         </ul>
