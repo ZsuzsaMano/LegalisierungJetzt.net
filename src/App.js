@@ -7,7 +7,8 @@ import {
   Link,
 } from 'react-router-dom';
 import LegalisierungContextProvider from './context/LegalisierungContext';
-import './styles/style.min.css';
+// import './styles/style.min.css';
+import './styles/style.scss';
 import PopupModal from './components/PopupModal';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
