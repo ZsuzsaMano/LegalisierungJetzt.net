@@ -10,6 +10,7 @@ const Navbar = () => {
     { id: 'nav__letter', link: 'letter' },
     { id: 'nav__events', link: 'events' },
     { id: 'nav__materials', link: 'materials' },
+    { id: 'nav__pressconference', link: 'press' },
   ];
 
   return (
@@ -18,7 +19,7 @@ const Navbar = () => {
             {pages.map((p, index) => (
               <li key={p.id}>
                  <NavLink to={'/' + pages[index].link}
-                  activeClassName="activeRoute" >{languagesObject[language].nav[p.id]}</NavLink>
+                  activeClassName="activeRoute" >{t(['nav[p.id]'])}</NavLink>
              </li>
             ))}
         </ul>
