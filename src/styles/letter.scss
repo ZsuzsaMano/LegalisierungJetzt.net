@@ -2,10 +2,11 @@
 
 header {
   @include flex(space-around, center, row);
-  background: #222;
+  background: white;
 
   span {
     font-size: 3vw;
+    color: black;
   }
 
   .header__logo {
