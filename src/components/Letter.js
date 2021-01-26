@@ -1,23 +1,24 @@
-import React, {useContext} from 'react';
-import {LegalisierungContext} from '../context/LegalisierungContext';
+import React, { useContext } from 'react';
+import { LegalisierungContext } from '../context/LegalisierungContext';
 import languagesObject from '../languagesObject';
 
-
 const Letter = () => {
-  const {language} = useContext(LegalisierungContext);
+  const { language } = useContext(LegalisierungContext);
 
-  return(
+  return (
     <main className="letter">
       <article className="letter__article">
-        <h2 className="letter__title title" id="title">{languagesObject.[language].title}
-          </h2>
-        <p className="letter__text dark-box" id='letter__text'>
-        {languagesObject.[language].letter}
+        <h2 className="letter__title title" id="title">
+          {languagesObject.[language].title}
+        </h2>
+        <p className="letter__text dark-box" id="letter__text">
+          {languagesObject.[language].letter}
         </p>
       </article>
       <div className="signatories">
         <h3 id="signatories">{languagesObject.[language].signatories}</h3>
-        <p>Respect Berlin,
+        <p>
+          {`Respect Berlin,
           Solidarity City Berlin,
           La Casita,
           La Pachangona,
@@ -77,8 +78,9 @@ const Letter = () => {
           Justizwatch, Lampedusa Berlin,
           unter_bau,
           trixiewiz e.V.,
-          Sudan Uprising Germany Team  </p>
-        </div>
+          Sudan Uprising Germany Team`}
+        </p>
+      </div>
     </main>
   );
 };

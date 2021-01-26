@@ -1,0 +1,91 @@
+// Extends the JavaScript style guide from Airbnb
+// https://github.com/airbnb/javascript
+{
+  "extends": [
+    "react-app",
+    "react-app/jest",
+    "airbnb"
+  ],
+  "parser": "babel-eslint",
+  "env": {
+    "browser": true,
+    "mocha": true
+  },
+  "globals": {},
+  "rules": {
+    "max-len": [
+      "error",
+      {
+        "code": 200
+      }
+    ],
+    "react/no-unused-prop-types": [
+      "error",
+      {
+        "skipShapeProps": true
+      }
+    ],
+    // TODO turn on these rules after merge into master
+    "import/no-extraneous-dependencies": "off",
+    "react/jsx-filename-extension": "off",
+    "arrow-parens": "off",
+    "no-underscore-dangle": "off",
+    "no-unused-vars": 1,
+    "import/extensions": "off",
+    "import/imports-first": "off",
+    "import/prefer-default-export": "off",
+    "import/newline-after-import": "off",
+    "object-property-newline": "off",
+    "import/no-named-as-default": "off",
+    "react/forbid-prop-types": "off",
+    "react/no-string-refs": "off",
+    "jsx-a11y/label-has-for": "off",
+    "react/no-find-dom-node": "off",
+    "react/no-did-mount-set-state": "off",
+    "no-plusplus": [
+      2,
+      {
+        "allowForLoopAfterthoughts": true
+      }
+    ],
+    "jsx-a11y/no-static-element-interactions": "off",
+    "react/require-default-props": "off",
+    "react/jsx-no-bind": 0,
+    "camelcase": 1, //"camelcase": ["error", { "properties": "always", "allow": ["^UNSAFE_"] }],
+    "object-curly-spacing": [
+      "error",
+      "always",
+      {
+        "objectsInObjects": true
+      }
+    ],
+    "jsx-a11y/no-noninteractive-element-interactions": [
+      "error",
+      {
+        "handlers": [
+          "onClick",
+          "onMouseUp",
+          "onKeyPress",
+          "onKeyDown",
+          "onKeyUp"
+        ]
+      }
+    ],
+    "curly": [
+      2,
+      "multi"
+    ]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [
+          ".js",
+          ".jsx",
+          ".ts",
+          ".tsx"
+        ]
+      }
+    }
+  }
+}

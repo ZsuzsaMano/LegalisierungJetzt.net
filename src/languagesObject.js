@@ -1,11 +1,12 @@
+/* eslint-disable max-len */
 const languagesObject = {
   DE: {
     nav: {
       nav__letter: 'Brief',
       nav__events: 'Termine',
-      nav__materials: 'Materialien'
+      nav__materials: 'Materialien',
     },
-    title: `Offener Brief \n für die dauerhafte, bedingungslose Legalisierung aller undokumentierten, sich in illegalisierten Bedingungen befindlichen migrantischen Personen`,
+    title: 'Offener Brief \n für die dauerhafte, bedingungslose Legalisierung aller undokumentierten, sich in illegalisierten Bedingungen befindlichen migrantischen Personen',
     letter: `Der aktuelle Kontext drängt uns heute dazu, als Netzwerk von Kollektiven und Organisationen von Migrant*innen und Anti-Rassist*innen die dauerhafte und bedingungslose Legalisierung aller migrantischen Personen ohne Aufenthaltsgenehmigung in diesem Land zu fordern.
 
 In Berlin leben schätzungsweise zwischen 60.000 und 100.000 migrantische Personen ohne Dokumente. Unterschiedlichste Gründe führen dazu, dass sie sich in dieser Situation befinden.
@@ -37,26 +38,26 @@ LEGALISIERUNG JETZT!
 
 Die aktuelle Krise zeigt mit größter Klarheit, dass niemand von den fundamentalen sozialen Rechten ausgeschlossen werden darf! Fordert deshalb mit uns die Legalisierung aller Menschen ohne Aufenthaltsdokumente!`,
     signatories: 'Unterschriften',
-    past_events:`18. Dezember 2020: Künstlerische Intervention an verschiedenen Orten in Berlin - gegen den Paragraphen 87 und die Kriminalisierung von undokumentierten Menschen.
+    past_events: `18. Dezember 2020: Künstlerische Intervention an verschiedenen Orten in Berlin - gegen den Paragraphen 87 und die Kriminalisierung von undokumentierten Menschen.
 
     21. November 2020: Perreo Combativo - kämpferischer Tanz für die Sichtbarkeit und Legalisierung von Menschen ohne Papiere.
 
     12. Oktober 2020: Pressekonferenz - Auftakt der Kampagne "Legalisierung Jetzt"`,
 
-    upcoming_events:`28 Januar 2021: Online-Pressekonferenz: Die Situation von illegalisierten Migrant*innen im zweiten Lockdown.`,
+    upcoming_events: '28 Januar 2021: Online-Pressekonferenz: Die Situation von illegalisierten Migrant*innen im zweiten Lockdown.',
 
-    events_foot:`Jeden Monat findet eine Aktion der Kampagne statt. Mehr zu unseren aktuellen Aktionen und Veranstaltungen auf Facebook, Twitter und Instagram!`,
+    events_foot: 'Jeden Monat findet eine Aktion der Kampagne statt. Mehr zu unseren aktuellen Aktionen und Veranstaltungen auf Facebook, Twitter und Instagram!',
     title__upcoming__events: 'Anstehende Termine',
     title__past__events: 'Vergangene Termine',
-    title_event_oct:`Oktober - Start der Kampagne für Legalisierung Jetzt. Erste Pressekonferenz`,
-    title_event_nov:`November -  Kämpferischer Tanz (Perreo) am Berliner Hbf`,
-    title_event_dec:`Dezember - Künstlerische Intervention mit Figuren auf dem Alexanderplatz`
+    title_event_oct: 'Oktober - Start der Kampagne für Legalisierung Jetzt. Erste Pressekonferenz',
+    title_event_nov: 'November -  Kämpferischer Tanz (Perreo) am Berliner Hbf',
+    title_event_dec: 'Dezember - Künstlerische Intervention mit Figuren auf dem Alexanderplatz',
   },
   EN: {
     nav: {
       nav__letter: 'Letter',
       nav__events: 'Events',
-      nav__materials: 'Materials'
+      nav__materials: 'Materials',
     },
     title: 'OPEN LETTER \n  FOR THE PERMANENT AND UNCONDITIONAL LEGALISATION OF ALL UNDOCUMENTED AND ILLEGALISED MIGRANTS',
     letter: `The current situation calls on us as a network of migrant and anti-racist groups and organizations in Berlin to demand the permanent and unconditional legalization of all migrants without residence documents in this country.
@@ -90,25 +91,25 @@ LEGALISATION NOW!
 
 Join us to demand legalization; the current crisis shows more clearly that no one should be excluded from fundamental social rights!`,
     signatories: 'Signatories',
-    past_events:`December 18, 2020: Artistic intervention at different locations in Berlin - against paragraph 87 and the criminalization of undocumented people.
+    past_events: `December 18, 2020: Artistic intervention at different locations in Berlin - against paragraph 87 and the criminalization of undocumented people.
 
     November 21, 2020: Perreo Combativo - combative dance for the visibility and legalization of people without papers.
 
     October 12, 2020: Press conference - launch of the campaign "Legalisierung Jetzt".`,
 
-    upcoming_events:`January 28, 2021: Online Press Conference: The situation of illegalised migrants during the second lockdown.`,
-    events_foot:`Every month, there is one such action by the campaign. More on our current events and interventions on Facebook, Twitter and Instagram!`,
+    upcoming_events: 'January 28, 2021: Online Press Conference: The situation of illegalised migrants during the second lockdown.',
+    events_foot: 'Every month, there is one such action by the campaign. More on our current events and interventions on Facebook, Twitter and Instagram!',
     title__upcoming__events: 'Upcoming Events',
     title__past__events: 'Past Events',
-    title_event_oct:`October - Start of the Campaign for Legalization Now. First Pressconference.`,
-    title_event_nov:`November - Combative Dance (Perreo) at the Central Station in Berlin`,
-    title_event_dec:`December - Artistic Intervention with Paper-Figures at Alexanderplatz`
+    title_event_oct: 'October - Start of the Campaign for Legalization Now. First Pressconference.',
+    title_event_nov: 'November - Combative Dance (Perreo) at the Central Station in Berlin',
+    title_event_dec: 'December - Artistic Intervention with Paper-Figures at Alexanderplatz',
   },
   ES: {
     nav: {
       nav__letter: 'Carta',
       nav__events: 'Eventos',
-      nav__materials: 'Materiales'
+      nav__materials: 'Materiales',
     },
     title: 'CARTA ABIERTA\n POR LA LEGALIZACIÓN PERMANENTE Y SIN CONDICIONES DE TODAS LAS PERSONAS MIGRANTES INDOCUMENTADAS Y EN CONDICIÓN DE ILEGALIDAD',
     letter: `Hoy, el contexto actual nos convoca como red de colectivos y organizaciones de migrantes y antirracistas de Berlín a demandar la legalización permanente y sin condiciones de todas las personas migrantes sin documentos de residencia en este país.
@@ -144,13 +145,13 @@ LEGALIZACIÓN YA!
 
     12 de octubre 2020: Conferencia de prensa - lanzamiento de la campaña "Legalisierung Jetzt".`,
 
-    upcoming_events:`28 de enero 2021:  Conferencia de Prensa Virtual: La situación de la gente ilegalizada en el segundo lockdown.`,
-    events_foot:`Todos los meses hay una acción de la campaña. Más información sobre estos eventos en Facebook, Twitter e Instagram!`,
+    upcoming_events: '28 de enero 2021:  Conferencia de Prensa Virtual: La situación de la gente ilegalizada en el segundo lockdown.',
+    events_foot: 'Todos los meses hay una acción de la campaña. Más información sobre estos eventos en Facebook, Twitter e Instagram!',
     title__upcoming__events: 'Próximos Eventos',
     title__past__events: 'Eventos Pasados',
-    title_event_oct:`Octubre - Comienzo de la Campaña de Legalización Ya!.  Primera Conferencia de Prensa`,
-    title_event_nov:`Noviembre - Perreo Combativo en la Estación de Trenes de Berlin`,
-    title_event_dec:`Diciembre - Intervención Artística con Figuras de Cartón en Alexanderplatz`
+    title_event_oct: 'Octubre - Comienzo de la Campaña de Legalización Ya!.  Primera Conferencia de Prensa',
+    title_event_nov: 'Noviembre - Perreo Combativo en la Estación de Trenes de Berlin',
+    title_event_dec: 'Diciembre - Intervención Artística con Figuras de Cartón en Alexanderplatz',
   },
 };
 
