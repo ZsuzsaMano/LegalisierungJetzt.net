@@ -8,7 +8,7 @@ footer{
   padding: 1rem;
   min-width: 90vw;
   .footer__social{
-    min-width: 90vw;
+    min-width: 200px;
     @include flex(space-around, center, row);
   }
 .footer__spende{
