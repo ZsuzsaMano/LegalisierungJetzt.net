@@ -4,11 +4,11 @@ footer{
   @include flex(space-around, center, column);
   min-height: 300px;
   background: black;
-  color:$lila;
+  --color:$lila;
   padding: 1rem;
   min-width: 90vw;
   .footer__social{
-    min-width: 90vw;
+    min-width: 200px;
     @include flex(space-around, center, row);
   }
 .footer__spende{

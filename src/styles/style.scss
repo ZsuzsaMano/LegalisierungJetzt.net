@@ -1,8 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow');
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Barlow Condensed', sans-serif;
+  font-family: 'Barlow', sans-serif;
+  color: white;
+  list-style-type: none;
 }
 
 a {
@@ -19,8 +22,29 @@ $text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.9);
   flex-direction: $direction;
 }
 
+$signatureWidth: 200px;
+ul.signatureList {
+    margin-top: 20px;
+    -moz-column-width: $signatureWidth;
+    -moz-column-gap: 10px;
+    -webkit-column-width: $signatureWidth;
+    -webkit-column-gap: 10px;
+    column-width: $signatureWidth;
+    column-gap: 10px;
+    list-style-type: none;
+}
+li.signatureList {
+  margin-bottom: 5px !important;
+}
+
+
 .displaynone{
   display: none;
+}
+
+.letter__text{
+  text-align: justify;
+  text-justify: auto;
 }
 
 .dark-box {

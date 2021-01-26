@@ -2,9 +2,11 @@
 
 header {
   @include flex(space-around, center, row);
+  background: white;
 
   span {
     font-size: 3vw;
+    color: black;
   }
 
   .header__logo {
@@ -14,6 +16,9 @@ header {
 
 main {
   background: url("../img/Illegal.png");
+  background-size: cover;
+  -o-animation-direction: 100%;
+  background-repeat: repeat-y;
   text-shadow: $text-shadow;
   padding: 2rem;
 
@@ -26,11 +31,15 @@ main {
     margin: 2rem auto;
     padding: 1rem;
     background: rgba(0, 0, 0, 0.85);
-    border: 3px solid $lila;
+    border: 1px solid $lila;
     color: white;
     font-size: clamp(1rem, 2vw, 1.2rem);
     line-height: 1.7;
   }
+}
+main.home{
+    background: none;
+    background-color: #000;
 }
 
 .letter {
