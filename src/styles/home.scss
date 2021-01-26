@@ -1,17 +1,5 @@
 //main: style.scss
 
-main {
-  min-height: 80vh;
-}
-
-.home {
-  text-align: center;
-}
-
 .home img {
-  max-width: 400px;
-  margin: 0 auto;
-  text-align: center;
-  background: rgba(200, 200, 200, 0.3);
-  padding: 4px;
+  width: 100%;
 }
