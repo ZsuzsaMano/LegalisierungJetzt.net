@@ -17,6 +17,7 @@ import Letter from './components/Letter';
 import Main from './components/Main';
 import Materials from './components/Materials';
 import Footer from './components/Footer';
+import Press from './components/Press';
 
 const App = () => (
   <Suspense fallback="loading">
@@ -42,6 +43,9 @@ const App = () => (
             </Route>
             <Route path="/letter">
               <Letter />
+            </Route>
+            <Route path="/press">
+              <Press />
             </Route>
           </Switch>
         </Router>
