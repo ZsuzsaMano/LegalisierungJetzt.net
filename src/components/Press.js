@@ -21,7 +21,7 @@ const Press = () => {
           <br />
           <a href={doc3} rel="noreferrer" target="_blank">{'-> Offener Brief Deutsch'}</a>
           <br />
-          <a href={doc4} rel="noreferrer" target="_blank">{'-> Rechtliche Möglichkeiten auf Landesebene_Kurzversion'}</a>
+          <a href={doc4} rel="noreferrer" target="_blank">{'-> Rechtliche Möglichkeiten auf Landesebene'}</a>
           <br />
           <a href={doc5} rel="noreferrer" target="_blank">{'-> Stellungnahme Medibuero'}</a>
           <br />
@@ -36,7 +36,6 @@ const Press = () => {
 
         <div className="lettersToDownload">
           <h3>{t('press_conference.articles')}</h3>
-
           <ul className="press__list">
             <li>
               <a
@@ -45,9 +44,10 @@ const Press = () => {
                 Tagesspiegel was die pandemie fuer undokumentierte migranten bedeutet
               </a>
             </li>
+            <br />
             <li className="press__list-item">
               <a href="https://taz.de/Kampagne-Legalisierung-jetzt/!5719542/">
-                taz, 12.10.2020: Kampagne „Legalisierung jetzt“: Bisher politisch meist unsichtbar
+                Taz, 12.10.2020: Kampagne „Legalisierung jetzt“: Bisher politisch meist unsichtbar
               </a>
             </li>
             <br />
@@ -62,9 +62,16 @@ const Press = () => {
                 Junge welt, 16.10 2020: »Menschen, die selbst prekär leben, unterstützen andere«.Coronakrise verschärft die Lage von Menschen, die ohne legalen Aufenthaltsstatus in der BRD sind. Ein Gespräch mit Llanquiray Painemal
               </a>
             </li>
+          </ul>
+        </div>
+      </section>
+      <section className="dark-box" id="press_info">
+        <div className="links">
+          <h3>Audios</h3>
+          <ul>
             <li className="press__list-item">
               <a href="https://www1.wdr.de/radio/cosmo/programm/sendungen/estacionsur/deutschland/-wdr-legalisierung-jetzt-campana-102.html">
-                WDR, estacíon sur, 13.10.2020: Campaña “Legalisierung Jetzt!” Por un país sin invisibles
+                WDR, Estación Sur, 13.10.2020: Campaña “Legalisierung Jetzt!” Por un país sin invisibles
               </a>
             </li>
             <br />
@@ -76,7 +83,6 @@ const Press = () => {
         </div>
 
       </section>
-
     </main>
   );
 };
