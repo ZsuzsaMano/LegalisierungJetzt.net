@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { NavLink } from 'react-router-dom';
 
@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <nav>
       <ul>
-        {pages.map((p, index) => (
+        {pages.map((p) => (
           <li key={p.id}>
             <NavLink
               to={`/${p.link}`}

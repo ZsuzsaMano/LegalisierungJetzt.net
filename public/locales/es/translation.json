@@ -25,10 +25,13 @@
     },
     "events_foot": "Todos los meses hay una acción de la campaña. Más información sobre estos eventos en Facebook, Twitter e Instagram!"
   },
-  "press_conference":"Documentos",
+  "press_conference":{
+    "documents":"Documentos",
+    "articles":"Artículos de Prensa"
+  },
   "bank_acount":{
     "title":"Cuenta Bancaria",
-    "details":"Respect Berlin\nDE34 8306 5408 0004 9035 60\nBIC GENO DEF1 SLR\nDeutsche Skatbank\nVerwendungszweck:Legalisierungjetzt",
+    "details":"Respect Berlin\n\nDE34 8306 5408 0004 9035 60\n\nBIC GENO DEF1 SLR\n\nDeutsche Skatbank\n\nReferencia Bancaria:Legalisierungjetzt\n\n",
     "note":"Lamentablemente, las donaciones no son deducibles de impuestos. Se destinan a la ejecución de la campaña de legalización 2020/2021"
   } 
 }

@@ -7,6 +7,8 @@ footer{
   --color:$lila;
   padding: 1rem;
   min-width: 90vw;
+  white-space: pre-line;
+
   .footer__social{
     min-width: 200px;
     @include flex(space-around, center, row);
@@ -14,11 +16,14 @@ footer{
 .footer__spende{
     text-align: center;
 }
-  a{
+.footer__spende title{
+  font-size: small;
+}
+}
+  a {
   }
   svg{
   fill:$lila;
   width: 100%;
   height: 100%;
   }
-}

@@ -26,10 +26,13 @@
     },
     "events_foot": "Jeden Monat gibt es eine solche Aktion der Kampagne. Mehr zu unseren aktuellen Veranstaltungen und Interventionen auf Facebook, Twitter und Instagram!"
   },
-  "press_conference":"Dokumente",
+  "press_conference":{
+    "documents":"Dokumente",
+    "articles":"Pressebeiträge"
+  },
   "bank_acount":{
     "title":"Spendenkonto",
-    "details":"Respect Berlin\nDE34 8306 5408 0004 9035 60\nBIC GENO DEF1 SLR\nDeutsche Skatbank\nVerwendungszweck:Legalisierungjetzt",
+    "details":"Respect Berlin\n\nDE34 8306 5408 0004 9035 60\n\nBIC GENO DEF1 SLR\n\nDeutsche Skatbank\n\nVerwendungszweck:Legalisierungjetzt\n\n",
     "note":"Spenden sind leider nicht steuerlich absetzbar. Sie fließen in die Umsetzung der Kampagne für Legalisierung 2020/21"
   } 
 }

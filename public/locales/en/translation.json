@@ -25,10 +25,13 @@
     },
     "events_foot": "Every month, there is one such action by the campaign. More on our current events and interventions on Facebook, Twitter and Instagram!"
   },
-  "press_conference":"Documents",
+  "press_conference":{
+    "documents":"Documents",
+    "articles":" Press articles"
+  },
   "bank_acount":{
     "title":"Bank Account",
-    "details":"Respect Berlin\nDE34 8306 5408 0004 9035 60\nBIC GENO DEF1 SLR\nDeutsche Skatbank\nVerwendungszweck:Legalisierungjetzt",
+    "details":"Respect Berlin\n\nDE34 8306 5408 0004 9035 60\n\nBIC GENO DEF1 SLR\nDeutsche Skatbank\n\nTransfer reference:Legalisierungjetzt\n\n",
     "note":"Unfortunately, donations are not tax deductible. They go towards the implementation of the campaign for legalization 2020/21"
-  } 
+  }
 }

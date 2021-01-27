@@ -15,9 +15,9 @@ const Footer = () => {
         <a href="https://www.instagram.com/legalisierung_jetzt/" rel="noreferrer" target="_blank" aria-label="Instagram"><Instagram /></a>
       </div>
 
-      <p className="footer__spende title">{t('bank_acount.title')}</p>
-      <p className="footer__spende body ">{t('bank_acount.details')}</p>
-      <p className="footer__spende body ">{t('bank_acount.note')}</p>
+      <p className="footer__spende title ">{t('bank_acount.title')}</p>
+      <p className="footer__spende ">{t('bank_acount.details')}</p>
+      <p className="footer__spende ">{t('bank_acount.note')}</p>
 
     </footer>
 
