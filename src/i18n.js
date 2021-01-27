@@ -22,7 +22,6 @@ i18n
     fallbackLng: 'en',
     debug: true,
     whitelist: languages,
-
   });
 
 export default i18n;
