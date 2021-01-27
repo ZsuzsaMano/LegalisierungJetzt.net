@@ -42,7 +42,7 @@ const Materials = () => {
 
       <section className="dark-box" id="monthly_actions">
         <h2 className="materials__title title" id="materials__title">{t('events.past.octubre')}</h2>
-        <div className="VideoWrapper">
+        <div className="video">
           <iframe
             width="560"
             height="349"
