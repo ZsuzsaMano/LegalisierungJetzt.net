@@ -9,7 +9,7 @@ const Footer = () => {
   return (
     <footer>
       <div className="footer__social">
-        <a href="mailto:legalisierung_jetzt@riseup.net" target="_blank" aria-label="Email">
+        <a href="mailto:legalisierung_jetzt@riseup.net" target="_blank" rel="noreferrer" aria-label="Email">
           <Email />
         </a>
         <a href="https://www.facebook.com/legalisierungjetzt/" rel="noreferrer" aria-label="Facebook" target="_blank">
