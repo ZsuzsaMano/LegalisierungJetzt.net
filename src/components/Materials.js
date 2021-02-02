@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/media-has-caption */
 import React from 'react';
+import ReactPlayer from 'react-player';
 import { useTranslation } from 'react-i18next';
 import img2 from '../img/Perreo Combativo/Perreo comabativo-hbf.jpg';
 import img3 from '../img/Perreo Combativo/Perreo comabativo-hbf2.jpg';
@@ -20,7 +21,7 @@ const Materials = () => {
           {t('events.past.januar')}
         </h2>
         <div className="video">
-          <a href="https://fb.watch/3nJznEXf4G/">Link</a>
+          <ReactPlayer url="https://fb.watch/3nJznEXf4G/" controls />
         </div>
       </section>
       <section className="dark-box" id="monthly-actions">
