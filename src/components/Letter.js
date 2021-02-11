@@ -1,10 +1,9 @@
 /* eslint-disable react/no-array-index-key */
-import React, { useContext } from 'react';
-import { LegalisierungContext } from '../context/LegalisierungContext';
-import languagesObject from '../languagesObject';
+import { useTranslation } from 'react-i18next';
+import React from 'react';
 
 const Letter = () => {
-  const { language } = useContext(LegalisierungContext);
+  const { t } = useTranslation();
 
   const signatures = [
     'Respect Berlin',
@@ -72,15 +71,11 @@ const Letter = () => {
   return (
     <main className="letter">
       <article className="letter__article">
-        <h2 className="letter__title title" id="title">
-          {languagesObject.[language].title}
-        </h2>
-        <p className="letter__text dark-box" id="letter__text">
-          {languagesObject.[language].letter}
-        </p>
+        <h2 className="letter__title title" id="title">{t('title')}</h2>
+        <p className="letter__text dark-box" id="letter__text">{t('letter')}</p>
       </article>
       <div className="signatories">
-        <h3 id="signatories">{languagesObject.[language].signatories}</h3>
+        <h3 id="signatories">{t('signatories.title')}</h3>
         <ul className="signatureList">
           {signatures.map((signature, i) => (
             <li className="signatureList" key={`key-${i}`}>{signature}</li>

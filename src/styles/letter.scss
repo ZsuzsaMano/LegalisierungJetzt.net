@@ -2,10 +2,17 @@
 
 header {
   @include flex(space-around, center, row);
+  background: white;
+
   margin-bottom: 50px;
 
   @media (max-width: 900px) {
     margin-bottom: 10px;
+  }
+
+  span {
+    font-size: 3vw;
+    color: black;
   }
 
   .hero__text{
@@ -41,6 +48,7 @@ main {
 }
 main.home{
     background: none;
+    background-color: #000;
 }
 
 .letter {

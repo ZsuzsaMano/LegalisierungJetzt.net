@@ -7,8 +7,6 @@ import {
   Link,
 } from 'react-router-dom';
 import LegalisierungContextProvider from './context/LegalisierungContext';
-
-// TODO why do we have need a min?
 // import './styles/style.min.css';
 import './styles/style.scss';
 import PopupModal from './components/PopupModal';
@@ -19,6 +17,7 @@ import Letter from './components/Letter';
 import Main from './components/Main';
 import Materials from './components/Materials';
 import Footer from './components/Footer';
+import Press from './components/Press';
 
 const App = () => (
   <Suspense fallback="loading">
@@ -43,6 +42,9 @@ const App = () => (
             </Route>
             <Route path="/letter">
               <Letter />
+            </Route>
+            <Route path="/press">
+              <Press />
             </Route>
           </Switch>
         </Router>

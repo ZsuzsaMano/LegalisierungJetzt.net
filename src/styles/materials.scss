@@ -5,15 +5,18 @@
   list-style-position: inside;
 }
 
-iframe {
+video, iframe {
   width: clamp(200px, 90%, 560px);
   height: clamp(110px, 50%, 315px);
 }
-
+.material, .video{
+  @include flex (space-around, center, row);
+}
 .material img {
-  max-width: 400px;
+  width: 400px;
+  max-width:100%;
+  margin: 10px;
   height:auto;
   vertical-align: top;
   display: inline-block;
 }
-

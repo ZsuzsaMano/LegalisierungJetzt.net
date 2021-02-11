@@ -10,24 +10,24 @@ import {
   Grid,
 } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
-import React, { useState, useEffect, useContext } from 'react';
-import { Link as RouterLink } from 'react-router-dom';
-import languagesObject from '../languagesObject';
-import { LegalisierungContext } from '../context/LegalisierungContext';
+import React, { useState, useEffect } from 'react';
+import { NavLink, Link as RouterLink } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const pages = [
-  { id: 'nav__letter', link: '/letter' },
-  { id: 'nav__events', link: '/events' },
-  { id: 'nav__materials', link: '/materials' },
+  { id: 'nav__letter', link: 'letter' },
+  { id: 'nav__events', link: 'events' },
+  { id: 'nav__materials', link: 'materials' },
+  { id: 'nav__pressconference', link: 'press' },
 ];
 
-const getHeadersData = (language) => pages.map((page) => (
-  {
-    label: `${languagesObject[language].nav[page.id]}`,
-    href: page.link,
-  }));
-
 const useStyles = makeStyles(() => ({
+  hamburgerIcon: {
+    color: 'black',
+  },
+  paper: {
+    background: 'black',
+  },
   header: {
     backgroundColor: 'transparent',
     paddingRight: '79px',
@@ -57,7 +57,7 @@ const useStyles = makeStyles(() => ({
 }));
 
 export default function Navbar() {
-  const { language } = useContext(LegalisierungContext);
+  const { t } = useTranslation();
 
   const {
     header,
@@ -65,6 +65,8 @@ export default function Navbar() {
     toolbar,
     drawerContainer,
     desktopGridContainer,
+    hamburgerIcon,
+    paper,
   } = useStyles();
 
   const [state, setState] = useState({
@@ -87,26 +89,30 @@ export default function Navbar() {
   const handleDrawerOpen = () => setState((prevState) => ({ ...prevState, drawerOpen: true }));
   const handleDrawerClose = () => setState((prevState) => ({ ...prevState, drawerOpen: false }));
 
-  const getDrawerChoices = () => getHeadersData(language).map(({ label, href }) => (
-    <Link
-      {...{
-        component: RouterLink,
-        to: href,
-        onClick: handleDrawerClose,
-        color: 'inherit',
-        style: { textDecoration: 'none' },
-        key: label,
-      }}
-    >
-      <MenuItem>{label}</MenuItem>
-    </Link>
-  ));
+  const getDrawerChoices = () => pages.map((p) => {
+    const label = t(`nav.${p.id}`);
+    return (
+      <Link
+        {...{
+          component: RouterLink,
+          to: `/${p.link}`,
+          onClick: handleDrawerClose,
+          color: 'inherit',
+          style: { textDecoration: 'none' },
+          key: label,
+        }}
+      >
+        <MenuItem>{label}</MenuItem>
+      </Link>
+    );
+  });
 
   const displayMobile = () => (
     <Grid container justify="flex-end">
       <Toolbar>
         <Drawer
           {...{
+            classes: { paper },
             anchor: 'right',
             open: drawerOpen,
             onClose: handleDrawerClose,
@@ -116,15 +122,16 @@ export default function Navbar() {
         </Drawer>
         <Grid item xs>
           <IconButton
+            style={{ color: 'black' }}
             {...{
+              style: { color: 'black' },
               edge: 'end',
-              color: 'inherit',
               'aria-label': 'menu',
               'aria-haspopup': 'true',
               onClick: handleDrawerOpen,
             }}
           >
-            <MenuIcon />
+            <MenuIcon style={{ color: 'black' }} />
           </IconButton>
         </Grid>
       </Toolbar>
@@ -137,21 +144,24 @@ export default function Navbar() {
       className={desktopGridContainer}
     >
       <Toolbar className={toolbar}>
-        {getHeadersData(language).map(({ label, href }) => (
-          <Grid item key={label}>
-            <Button
-              {...{
-                key: label,
-                color: 'inherit',
-                to: href,
-                component: RouterLink,
-                className: menuButton,
-              }}
-            >
-              {label}
-            </Button>
-          </Grid>
-        ))}
+        {pages.map((p) => {
+          const label = t(`nav.${p.id}`);
+          return (
+            <Grid item key={p.id}>
+              <Button
+                {...{
+                  key: label,
+                  color: 'inherit',
+                  to: `/${p.link}`,
+                  component: RouterLink,
+                  className: menuButton,
+                }}
+              >
+                {label}
+              </Button>
+            </Grid>
+          );
+        })}
       </Toolbar>
     </Grid>
   );
