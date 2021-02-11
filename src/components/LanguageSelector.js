@@ -11,7 +11,7 @@ const PopupModal = (props) => {
 
   const { setLanguage } = useContext(LegalisierungContext);
 
-  const updateLanguage = (lang) => {
+  const updateLanguage = lang => {
     setLanguage(lang);
     i18n.changeLanguage(lang);
   };
@@ -19,9 +19,15 @@ const PopupModal = (props) => {
   return (
     <div className="popup">
       <ul className="popup_languages">
-        <li id="de" className="languages__tab" onClick={() => updateLanguage('de')}>DE</li>
-        <li id="en" className="languages__tab" onClick={() => updateLanguage('en')}>EN</li>
-        <li id="es" className="languages__tab" onClick={() => updateLanguage('es')}>ES</li>
+        <li id="de" className="languages__tab" onClick={() => updateLanguage('de')}>
+          DE
+        </li>
+        <li id="en" className="languages__tab" onClick={() => updateLanguage('en')}>
+          EN
+        </li>
+        <li id="es" className="languages__tab" onClick={() => updateLanguage('es')}>
+          ES
+        </li>
       </ul>
     </div>
   );

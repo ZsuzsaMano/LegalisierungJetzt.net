@@ -1,5 +1,6 @@
 /* eslint-disable jsx-a11y/media-has-caption */
 import React from 'react';
+import ReactPlayer from 'react-player';
 import { useTranslation } from 'react-i18next';
 import img2 from '../img/Perreo Combativo/Perreo comabativo-hbf.jpg';
 import img3 from '../img/Perreo Combativo/Perreo comabativo-hbf2.jpg';
@@ -15,8 +16,18 @@ const Materials = () => {
 
   return (
     <main className="materials">
+      <section className="dark-box" id="monthly_actions">
+        <h2 className="materials__title title" id="materials__title">
+          {t('events.past.januar')}
+        </h2>
+        <div className="video">
+          <ReactPlayer url="https://fb.watch/3nJznEXf4G/" controls />
+        </div>
+      </section>
       <section className="dark-box" id="monthly-actions">
-        <h2 className="materials__title title" id="materials__title">{t('events.past.diciembre')}</h2>
+        <h2 className="materials__title title" id="materials__title">
+          {t('events.past.diciembre')}
+        </h2>
         <div className="material">
           <img src={img6} alt="" />
           <img src={img7} alt="" />
@@ -31,7 +42,9 @@ const Materials = () => {
       </section>
 
       <section className="dark-box" id="monthly-actions">
-        <h2 className="materials__title title" id="materials__title">{t('events.past.noviembre')}</h2>
+        <h2 className="materials__title title" id="materials__title">
+          {t('events.past.noviembre')}
+        </h2>
         <div className="material">
           <img src={img2} alt="" />
           <img src={img3} alt="" />
@@ -41,7 +54,9 @@ const Materials = () => {
       </section>
 
       <section className="dark-box" id="monthly_actions">
-        <h2 className="materials__title title" id="materials__title">{t('events.past.octubre')}</h2>
+        <h2 className="materials__title title" id="materials__title">
+          {t('events.past.octubre')}
+        </h2>
         <div className="video">
           <iframe
             width="560"
@@ -54,7 +69,6 @@ const Materials = () => {
           />
         </div>
       </section>
-
     </main>
   );
 };

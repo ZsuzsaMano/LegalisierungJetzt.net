@@ -1,8 +1,9 @@
 /* eslint-disable max-len */
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import doc1 from '../pdf/1_Carta Abierta Legalisierung_Jetzt.pdf';
-import doc2 from '../pdf/2_Open Letter Legalisierung_Jetzt.pdf';
+import doc0 from '../pdf/28_1_21_LegalisierungJetzt_PresseKonferenz.pdf';
+import doc2 from '../pdf/1_Carta Abierta Legalisierung_Jetzt.pdf';
+import doc1 from '../pdf/2_Open Letter Legalisierung_Jetzt.pdf';
 import doc3 from '../pdf/3_Offener Brief Legalisierung_Jetzt.pdf';
 import doc4 from '../pdf/4_Rechtliche_Moglichkeiten_auf_Landesebene_Kurzversion.pdf';
 import doc5 from '../pdf/5_Stellungnahme Medibuero.pdf';
@@ -15,40 +16,65 @@ const Press = () => {
       <section className="dark-box" id="press_info">
         <div className="links">
           <h3 className="press__title">{t('press_conference.documents')}</h3>
-          <a href={doc1} rel="noreferrer" target="_blank">{'-> Open Letter English'}</a>
+          <a href={doc0} rel="noreferrer" target="_blank">
+            {'-> Invitation to the press conference'}
+          </a>
           <br />
-          <a href={doc2} rel="noreferrer" target="_blank">{'-> Carta Abierta Español'}</a>
+          <a href={doc1} rel="noreferrer" target="_blank">
+            {'-> Open Letter English'}
+          </a>
           <br />
-          <a href={doc3} rel="noreferrer" target="_blank">{'-> Offener Brief Deutsch'}</a>
+          <a href={doc2} rel="noreferrer" target="_blank">
+            {'-> Carta Abierta Español'}
+          </a>
           <br />
-          <a href={doc4} rel="noreferrer" target="_blank">{'-> Rechtliche Möglichkeiten auf Landesebene'}</a>
+          <a href={doc3} rel="noreferrer" target="_blank">
+            {'-> Offener Brief Deutsch'}
+          </a>
           <br />
-          <a href={doc5} rel="noreferrer" target="_blank">{'-> Stellungnahme Medibuero'}</a>
+          <a href={doc4} rel="noreferrer" target="_blank">
+            {'-> Rechtliche Möglichkeiten auf Landesebene'}
+          </a>
           <br />
-          <a href={doc6} rel="noreferrer" target="_blank">{'-> Aktionen der Kampagne Legalisierung Jetzt'}</a>
+          <a href={doc5} rel="noreferrer" target="_blank">
+            {'-> Stellungnahme Medibuero'}
+          </a>
           <br />
-
+          <a href={doc6} rel="noreferrer" target="_blank">
+            {'-> Aktionen der Kampagne Legalisierung Jetzt'}
+          </a>
+          <br />
         </div>
-
       </section>
 
       <section className="dark-box">
-
         <div className="lettersToDownload">
           <h3>{t('press_conference.articles')}</h3>
           <ul className="press__list">
             <li>
-              <a
-                href="https://m.tagesspiegel.de/berlin/ich-bete-jeden-tag-dass-es-mich-nicht-erwischt-was-die-pandemie-fuer-undokumentierte-migranten-bedeutet/26642734.html"
-              >
+              <a href="https://www.neues-deutschland.de/artikel/1147592.menschen-ohne-aufenthaltsgenehmigung-keine-gesundheit-ohne-papiere.html?sstr=Menschen%20ohne%20Aufenthaltsgenehmigung">
+                Neues Deutschland, 28.1.2021: Keine Gesundheit ohne Papiere.Illegalisierte Menschen können sich kaum vor dem Coronavirus schützen
+              </a>
+            </li>
+            <br />
+            <li>
+              <a href="https://taz.de/Illegalisierte-Menschen-in-der-Pandemie/!5743518/">taz, 28.1.2021: Illegalisierte Menschen in der Pandemie: Impfung und Legalisierung gefordert</a>
+            </li>
+            <br />
+            <li>
+              <a href="https://jungle.world/artikel/2020/43/nicht-auf-dem-papier">
+                Jungle World, 22.10.2020: Nicht auf dem Papier. Die Kampagne »Legalisierung jetzt!« fordert mehr Rechte für Menschen ohne Papiere
+              </a>
+            </li>
+            <br />
+            <li>
+              <a href="https://m.tagesspiegel.de/berlin/ich-bete-jeden-tag-dass-es-mich-nicht-erwischt-was-die-pandemie-fuer-undokumentierte-migranten-bedeutet/26642734.html">
                 Tagesspiegel was die pandemie fuer undokumentierte migranten bedeutet
               </a>
             </li>
             <br />
             <li className="press__list-item">
-              <a href="https://taz.de/Kampagne-Legalisierung-jetzt/!5719542/">
-                Taz, 12.10.2020: Kampagne „Legalisierung jetzt“: Bisher politisch meist unsichtbar
-              </a>
+              <a href="https://taz.de/Kampagne-Legalisierung-jetzt/!5719542/">Taz, 12.10.2020: Kampagne „Legalisierung jetzt“: Bisher politisch meist unsichtbar</a>
             </li>
             <br />
             <li className="press__list-item">
@@ -59,7 +85,8 @@ const Press = () => {
             <br />
             <li className="press__list-item">
               <a href="https://www.jungewelt.de/loginFailed.php?ref=/artikel/388462.menschen-die-selbst-prek%C3%A4r-leben-unterst%C3%BCtzen-andere.html">
-                Junge welt, 16.10 2020: »Menschen, die selbst prekär leben, unterstützen andere«.Coronakrise verschärft die Lage von Menschen, die ohne legalen Aufenthaltsstatus in der BRD sind. Ein Gespräch mit Llanquiray Painemal
+                Junge welt, 16.10 2020: »Menschen, die selbst prekär leben, unterstützen andere«.Coronakrise verschärft die Lage von Menschen, die ohne legalen Aufenthaltsstatus in der BRD sind. Ein
+                Gespräch mit Llanquiray Painemal
               </a>
             </li>
           </ul>
@@ -79,9 +106,7 @@ const Press = () => {
               <a href="https://radiocorax.de/legalisierung-jetzt-gespraech-zur-kampagne-mit-respect-berlin/">#Legalisierung Jetzt! Gespräch zur Kampagne mit Respect Berlin, Radio Coray, 24.11.2020</a>
             </li>
           </ul>
-
         </div>
-
       </section>
     </main>
   );
