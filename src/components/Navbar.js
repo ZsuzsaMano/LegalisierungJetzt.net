@@ -13,6 +13,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import React, { useState, useEffect } from 'react';
 import { NavLink, Link as RouterLink } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import LanguageSelector from './LanguageSelector';
 
 const pages = [
   { id: 'nav__letter', link: 'letter' },
@@ -168,6 +169,7 @@ export default function Navbar() {
 
   return (
     <header>
+      <LanguageSelector />
       <AppBar className={header} elevation={0}>
         {mobileView ? displayMobile() : displayDesktop()}
       </AppBar>

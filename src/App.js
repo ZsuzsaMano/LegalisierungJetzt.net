@@ -9,7 +9,6 @@ import {
 import LegalisierungContextProvider from './context/LegalisierungContext';
 // import './styles/style.min.css';
 import './styles/style.scss';
-import PopupModal from './components/PopupModal';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 import Events from './components/Events';
@@ -23,7 +22,6 @@ const App = () => (
   <Suspense fallback="loading">
 
     <LegalisierungContextProvider>
-      <PopupModal />
       <div className="App">
         <Router>
           <Link to="/">
