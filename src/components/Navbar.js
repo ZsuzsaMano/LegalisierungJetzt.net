@@ -22,9 +22,13 @@ const pages = [
 ];
 
 const useStyles = makeStyles(() => ({
+  hamburgerIconGridItem: {
+    marginTop: '-11px',
+  },
   hamburgerIcon: {
     color: 'black',
     fill: 'black',
+    fontSize: '30px',
   },
   paper: {
     background: 'black',
@@ -70,6 +74,7 @@ export default function Navbar() {
     hamburgerIcon,
     mobileMenuItem,
     paper,
+    hamburgerIconGridItem,
   } = useStyles();
 
   const [state, setState] = useState({
@@ -117,6 +122,7 @@ export default function Navbar() {
     <Grid
       container
       justify="flex-end"
+      alignItems="center"
       spacing={0}
     >
       <Toolbar>
@@ -130,7 +136,12 @@ export default function Navbar() {
         >
           <div className={drawerContainer}>{getDrawerChoices()}</div>
         </Drawer>
-        <Grid item xs spacing={0}>
+        <Grid
+          className={hamburgerIconGridItem}
+          item
+          xs
+          spacing={0}
+        >
           <IconButton
             {...{
               edge: 'end',

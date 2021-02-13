@@ -1,19 +1,27 @@
 //main: style.scss
 .popup{
   position: absolute;
-  top: 5px;
-  left: 5px;
+  top: 34px;
+  left: 20px;
+  @media screen and (max-width:900px) {
+    top: 5px;
+    left: 0px;
+  }
+  @media screen and (min-width:901px) {
+    .MuiSvgIcon-root{
+      font-size: 50px;
+    }
+  }
 }
 .popup_languages{
-  position: absolute;
+  @include flex(space-around, center, column);
   color:black;
   font-size: 1.3rem;
-  @include flex(space-around, center, row);
   list-style: none;
-  width: 120px;
   border-radius: 5px;
   .languages__tab{
     cursor: pointer;
     color:black;
+    margin: 3px;
   }
 }
