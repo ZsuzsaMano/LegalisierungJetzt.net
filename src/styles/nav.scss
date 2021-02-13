@@ -35,7 +35,7 @@ nav {
 .route {
   @include flex(space-around, center, row);
   color: white;
-  font-size: 1.9rem;
+  font-size: 1.7rem;
   transition: all 200ms ease-in;
 
   &:hover {

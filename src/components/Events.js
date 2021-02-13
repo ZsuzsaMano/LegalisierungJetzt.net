@@ -32,9 +32,10 @@ const Events = () => {
         </li>
       </ul>
 
-      <section className="dark-box event__box">
+      <div className="dark-box event__box final_element">
         <h2 className="event__title title">{t('events.events_foot')}</h2>
-      </section>
+      </div>
+      <br />
     </main>
   );
 };

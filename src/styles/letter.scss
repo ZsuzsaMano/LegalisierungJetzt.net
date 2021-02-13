@@ -4,6 +4,7 @@
   @include flex(space-around, center, row);
   background: white;
   margin-bottom: 20px;
+  margin-top: 10px;
   span {
     font-size: 3vw;
     color: black;
@@ -23,11 +24,8 @@
 
 main {
   background: url("../img/Illegal.png");
-  //background-size: cover;
   -o-animation-direction: 100%;
-  //background-repeat: repeat-y;
   text-shadow: $text-shadow;
-  //padding: 2rem;
 
   &__title {
     font-size: clamp(1rem, 3vw ,1.8rem);
@@ -62,7 +60,9 @@ main.home{
 .signatories {
   padding: 1rem;
   text-align: center;
-  background: #141313;
+  //TODO this was having a strange effect, was it intended? if yes revert
+  //background: #141313;
+  background: black;
 
   h3 {
     font-size: 2.1rem;
