@@ -28,7 +28,7 @@ const useStyles = makeStyles(() => ({
   hamburgerIcon: {
     color: 'black',
     fill: 'black',
-    fontSize: '30px',
+    fontSize: '35px',
   },
   paper: {
     background: 'black',
@@ -45,7 +45,7 @@ const useStyles = makeStyles(() => ({
   header: {
     backgroundColor: 'transparent',
     '@media (max-width: 900px)': {
-      position: 'fixed',
+      position: 'absolute',
       top: '0px',
       right: '0px',
     },
