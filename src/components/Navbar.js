@@ -24,6 +24,7 @@ const pages = [
 const useStyles = makeStyles(() => ({
   hamburgerIcon: {
     color: 'black',
+    fill: 'black',
   },
   paper: {
     background: 'black',
@@ -31,6 +32,11 @@ const useStyles = makeStyles(() => ({
   menuContainer: {
     backgroundColor: 'black',
     color: 'white',
+  },
+  mobileMenuItem: {
+    textDecoration: 'none',
+    fontSize: '18px',
+    color: 'inherit',
   },
   header: {
     backgroundColor: 'transparent',
@@ -62,6 +68,7 @@ export default function Navbar() {
     drawerContainer,
     desktopGridContainer,
     hamburgerIcon,
+    mobileMenuItem,
     paper,
   } = useStyles();
 
@@ -93,18 +100,25 @@ export default function Navbar() {
           component: RouterLink,
           to: `/${p.link}`,
           onClick: handleDrawerClose,
-          color: 'inherit',
-          style: { textDecoration: 'none' },
+          className: mobileMenuItem,
           key: label,
         }}
       >
-        <MenuItem>{label}</MenuItem>
+        <MenuItem
+          className={mobileMenuItem}
+        >
+          {label}
+        </MenuItem>
       </Link>
     );
   });
 
   const displayMobile = () => (
-    <Grid container justify="flex-end">
+    <Grid
+      container
+      justify="flex-end"
+      spacing={0}
+    >
       <Toolbar>
         <Drawer
           {...{
@@ -116,18 +130,16 @@ export default function Navbar() {
         >
           <div className={drawerContainer}>{getDrawerChoices()}</div>
         </Drawer>
-        <Grid item xs>
+        <Grid item xs spacing={0}>
           <IconButton
-            style={{ color: 'black' }}
             {...{
-              style: { color: 'black' },
               edge: 'end',
               'aria-label': 'menu',
               'aria-haspopup': 'true',
               onClick: handleDrawerOpen,
             }}
           >
-            <MenuIcon style={{ color: 'black' }} />
+            <MenuIcon className={hamburgerIcon} />
           </IconButton>
         </Grid>
       </Toolbar>
@@ -141,12 +153,12 @@ export default function Navbar() {
       justify="space-around"
       alignItems="center"
       className={desktopGridContainer}
-      spacing={24}
+      spacing={0}
     >
       {pages.map((p) => {
         const label = t(`nav.${p.id}`);
         return (
-          <Grid item key={p.id} spacing={24}>
+          <Grid item key={p.id} spacing={0}>
             <NavLink
               to={`/${p.link}`}
               className="route"
