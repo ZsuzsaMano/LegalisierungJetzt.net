@@ -2,7 +2,6 @@ import {
   AppBar,
   Toolbar,
   makeStyles,
-  Button,
   IconButton,
   Drawer,
   Link,
@@ -29,24 +28,17 @@ const useStyles = makeStyles(() => ({
   paper: {
     background: 'black',
   },
+  menuContainer: {
+    backgroundColor: 'black',
+    color: 'white',
+  },
   header: {
     backgroundColor: 'transparent',
-    paddingRight: '79px',
-    paddingLeft: '118px',
-    marginTop: '110px',
     '@media (max-width: 900px)': {
-      padding: '0px',
-      marginTop: '0px',
+      position: 'fixed',
+      top: '0px',
+      right: '0px',
     },
-  },
-  menuButton: {
-    size: '13px',
-    marginLeft: '38px',
-    fontSize: '2vw',
-  },
-  toolbar: {
-    display: 'flex',
-    justifyContent: 'space-between',
   },
   drawerContainer: {
     padding: '20px 30px',
@@ -54,6 +46,10 @@ const useStyles = makeStyles(() => ({
   desktopGridContainer: {
     flexGrow: 1,
     width: 'auto',
+    height: '80px',
+    '@media (max-width: 900px)': {
+      height: '20px',
+    },
   },
 }));
 
@@ -62,8 +58,7 @@ export default function Navbar() {
 
   const {
     header,
-    menuButton,
-    toolbar,
+    menuContainer,
     drawerContainer,
     desktopGridContainer,
     hamburgerIcon,
@@ -142,37 +137,41 @@ export default function Navbar() {
   const displayDesktop = () => (
     <Grid
       container
+      direction="row"
+      justify="space-around"
+      alignItems="center"
       className={desktopGridContainer}
+      spacing={24}
     >
-      <Toolbar className={toolbar}>
-        {pages.map((p) => {
-          const label = t(`nav.${p.id}`);
-          return (
-            <Grid item key={p.id}>
-              <Button
-                {...{
-                  key: label,
-                  color: 'inherit',
-                  to: `/${p.link}`,
-                  component: RouterLink,
-                  className: menuButton,
-                }}
-              >
-                {label}
-              </Button>
-            </Grid>
-          );
-        })}
-      </Toolbar>
+      {pages.map((p) => {
+        const label = t(`nav.${p.id}`);
+        return (
+          <Grid item key={p.id} spacing={24}>
+            <NavLink
+              to={`/${p.link}`}
+              className="route"
+              activeClassName="activeRoute"
+            >
+              {label}
+            </NavLink>
+          </Grid>
+        );
+      })}
     </Grid>
   );
 
   return (
-    <header>
-      <LanguageSelector />
-      <AppBar className={header} elevation={0}>
-        {mobileView ? displayMobile() : displayDesktop()}
-      </AppBar>
-    </header>
+    <div className={menuContainer}>
+      <menu>
+        <LanguageSelector />
+        <AppBar
+          className={header}
+          position="relative"
+          elevation={0}
+        >
+          {mobileView ? displayMobile() : displayDesktop()}
+        </AppBar>
+      </menu>
+    </div>
   );
 }

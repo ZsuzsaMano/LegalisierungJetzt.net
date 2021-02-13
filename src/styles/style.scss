@@ -81,9 +81,13 @@ li.signatureList {
   height: clamp(200px, 60vw, 400px);
 }
 
-@media screen and (max-width:500px) {
+@media screen and (max-width:900px) {
   main {
-    padding: 0.2rem;
+    padding: 0rem;
+  }
+  .materials {
+    //aligned on top with letters and events
+    padding: 0em;
   }
 }
 

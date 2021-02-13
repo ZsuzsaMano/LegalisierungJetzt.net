@@ -4,7 +4,7 @@ import React, { useContext } from 'react';
 import { useTranslation } from 'react-i18next';
 import { LegalisierungContext } from '../context/LegalisierungContext';
 
-const PopupModal = (props) => {
+const PopupModal = () => {
   const {
     i18n,
   } = useTranslation();

@@ -31,3 +31,19 @@ nav {
     }
   }
 }
+
+.route {
+  @include flex(space-around, center, row);
+  color: white;
+  font-size: 1.9rem;
+  transition: all 200ms ease-in;
+
+  &:hover {
+    transform: scale(1.1);
+    border-bottom: 2px solid $lila;
+  }
+
+  &.activeRoute {
+    border-bottom: 2px solid $lila;
+  }
+}
