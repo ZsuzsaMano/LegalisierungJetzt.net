@@ -54,7 +54,7 @@ const LanguageSelector = () => {
         <div style={{ width: '100px', height: '100px' }}>
           <ul className="popup_languages">
             <li id="de" className="languages__tab" onClick={() => updateLanguage('de')}>
-              Deutsche
+              Deutsch
             </li>
             <li id="en" className="languages__tab" onClick={() => updateLanguage('en')}>
               English
