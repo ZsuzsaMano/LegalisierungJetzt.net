@@ -19,6 +19,7 @@ const pages = [
   { id: 'nav__events', link: 'events' },
   { id: 'nav__materials', link: 'materials' },
   { id: 'nav__pressconference', link: 'press' },
+  { id: 'nav__documents', link: 'documents' },
 ];
 
 const useStyles = makeStyles(() => ({

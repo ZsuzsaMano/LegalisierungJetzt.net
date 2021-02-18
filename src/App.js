@@ -17,7 +17,7 @@ import Main from './components/Main';
 import Materials from './components/Materials';
 import Footer from './components/Footer';
 import Press from './components/Press';
-
+import Documents from './components/Documents';
 const App = () => (
   <Suspense fallback="loading">
 
@@ -43,6 +43,9 @@ const App = () => (
             </Route>
             <Route path="/press">
               <Press />
+            </Route>
+            <Route path="/documents">
+              <Documents />
             </Route>
           </Switch>
         </Router>
