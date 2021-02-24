@@ -9,7 +9,6 @@ import {
 import LegalisierungContextProvider from './context/LegalisierungContext';
 // import './styles/style.min.css';
 import './styles/style.scss';
-import PopupModal from './components/PopupModal';
 import Hero from './components/Hero';
 import Navbar from './components/Navbar';
 import Events from './components/Events';
@@ -18,18 +17,16 @@ import Main from './components/Main';
 import Materials from './components/Materials';
 import Footer from './components/Footer';
 import Press from './components/Press';
-
+import Documents from './components/Documents';
 const App = () => (
   <Suspense fallback="loading">
 
     <LegalisierungContextProvider>
-      <PopupModal />
       <div className="App">
         <Router>
           <Link to="/">
             <Hero />
           </Link>
-
           <Navbar />
           <Switch>
             <Route exact path="/">
@@ -46,6 +43,9 @@ const App = () => (
             </Route>
             <Route path="/press">
               <Press />
+            </Route>
+            <Route path="/documents">
+              <Documents />
             </Route>
           </Switch>
         </Router>

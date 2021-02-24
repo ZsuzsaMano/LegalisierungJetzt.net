@@ -13,44 +13,16 @@ const Press = () => {
   const { t } = useTranslation();
   return (
     <main className="materials">
-      <section className="dark-box" id="press_info">
-        <div className="links">
-          <h3 className="press__title">{t('press_conference.documents')}</h3>
-          <a href={doc0} rel="noreferrer" target="_blank">
-            {'-> Invitation to the press conference'}
-          </a>
-          <br />
-          <a href={doc1} rel="noreferrer" target="_blank">
-            {'-> Open Letter English'}
-          </a>
-          <br />
-          <a href={doc2} rel="noreferrer" target="_blank">
-            {'-> Carta Abierta Español'}
-          </a>
-          <br />
-          <a href={doc3} rel="noreferrer" target="_blank">
-            {'-> Offener Brief Deutsch'}
-          </a>
-          <br />
-          <a href={doc4} rel="noreferrer" target="_blank">
-            {'-> Rechtliche Möglichkeiten auf Landesebene'}
-          </a>
-          <br />
-          <a href={doc5} rel="noreferrer" target="_blank">
-            {'-> Stellungnahme Medibuero'}
-          </a>
-          <br />
-          <a href={doc6} rel="noreferrer" target="_blank">
-            {'-> Aktionen der Kampagne Legalisierung Jetzt'}
-          </a>
-          <br />
-        </div>
-      </section>
-
       <section className="dark-box">
         <div className="lettersToDownload">
           <h3>{t('press_conference.articles')}</h3>
           <ul className="press__list">
+            <li>
+              <a href="https://jungle.world/artikel/2021/05/es-stimmt-nicht-dass-nichts-getan-werden-kann">
+                Jungle World, 04.02.2021: Small Talk mit Amarilis Tapia über die Kampagne »Legalisierung jetzt«. »Es stimmt nicht, dass nichts getan werden kann
+              </a>
+            </li>
+            <br />
             <li>
               <a href="https://www.neues-deutschland.de/artikel/1147592.menschen-ohne-aufenthaltsgenehmigung-keine-gesundheit-ohne-papiere.html?sstr=Menschen%20ohne%20Aufenthaltsgenehmigung">
                 Neues Deutschland, 28.1.2021: Keine Gesundheit ohne Papiere.Illegalisierte Menschen können sich kaum vor dem Coronavirus schützen

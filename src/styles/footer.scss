@@ -10,7 +10,7 @@ footer{
   white-space: pre-line;
 
   .footer__social{
-    min-width: 200px;
+    min-width: 400px;
     @include flex(space-around, center, row);
   }
 .footer__spende{
@@ -21,6 +21,8 @@ footer{
 }
 }
   a {
+    height: 50px;
+    width: 50px;
   }
   svg{
   fill:$lila;

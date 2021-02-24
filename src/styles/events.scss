@@ -3,3 +3,8 @@
 .event__box {
   white-space: pre-line;
 }
+
+//avoids white space on bottom
+.final_element{
+  margin-bottom: 0px;
+}
