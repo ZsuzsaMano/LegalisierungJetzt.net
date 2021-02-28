@@ -2,23 +2,18 @@
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 import React, { useContext, useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import {
-  Button,
-  Popover,
-} from '@material-ui/core';
+import { Button, Popover } from '@material-ui/core';
 import LanguageIcon from '@material-ui/icons/Language';
 import { LegalisierungContext } from '../context/LegalisierungContext';
 
 const LanguageSelector = () => {
-  const {
-    i18n,
-  } = useTranslation();
+  const { i18n } = useTranslation();
 
   const { setLanguage } = useContext(LegalisierungContext);
   const [isOpen, setIsOpen] = useState(false);
   const [anchorEl, setAnchorEl] = React.useState(null);
 
-  const toggleLanguage = (event) => {
+  const toggleLanguage = event => {
     if (!isOpen) setAnchorEl(event.currentTarget);
     else setAnchorEl(null);
 
@@ -36,7 +31,7 @@ const LanguageSelector = () => {
   return (
     <div className="popup">
       <Button aria-describedby={id} onClick={toggleLanguage}>
-        <LanguageIcon style={{ fill: 'black', zIndex: '99999' }} />
+        <LanguageIcon style={{ fill: 'white', zIndex: '99999' }} />
       </Button>
       <Popover
         id={id}
