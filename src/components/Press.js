@@ -18,6 +18,18 @@ const Press = () => {
           <h3>{t('press_conference.articles')}</h3>
           <ul className="press__list">
             <li>
+              <a href="https://www.neues-deutschland.de/artikel/1148684.illegalisierte-lernen-nur-mit-pass.html">
+                Neues Deutschland, 23.2. 2021: Lernen nur mit Pass. Kinder ohne Papiere sind vom Schulbesuch oft ausgeschlossen.
+              </a>
+            </li>
+            <br />
+            <li>
+              <a href="https://taz.de/!5750664/">
+                taz, 26.2.2021: Schule bleibt ein Wunsch.
+              </a>
+            </li>
+            <br />
+            <li>
               <a href="https://jungle.world/artikel/2021/05/es-stimmt-nicht-dass-nichts-getan-werden-kann">
                 Jungle World, 04.02.2021: Small Talk mit Amarilis Tapia über die Kampagne »Legalisierung jetzt«. »Es stimmt nicht, dass nichts getan werden kann
               </a>
