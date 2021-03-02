@@ -141,7 +141,6 @@ export default function Navbar() {
           className={hamburgerIconGridItem}
           item
           xs
-          spacing={0}
         >
           <IconButton
             {...{
@@ -170,7 +169,7 @@ export default function Navbar() {
       {pages.map((p) => {
         const label = t(`nav.${p.id}`);
         return (
-          <Grid item key={p.id} spacing={0}>
+          <Grid item key={p.id}>
             <NavLink
               to={`/${p.link}`}
               className="route"

@@ -3,23 +3,36 @@ import { useTranslation } from 'react-i18next';
 import {
   Instagram, Facebook, Twitter, Email,
 } from '@material-ui/icons';
+import {
+  makeStyles,
+} from '@material-ui/core';
+
+const useStyles = makeStyles(() => ({
+  socialMediaIcon: {
+    fontSize: 40,
+    '@media (max-width: 900px)': {
+      fontSize: 35,
+    },
+  },
+}));
 
 const Footer = () => {
   const { t } = useTranslation();
+  const { socialMediaIcon } = useStyles();
   return (
     <footer>
       <div className="footer__social">
         <a href="mailto:legalisierung_jetzt@riseup.net" target="_blank" rel="noreferrer" aria-label="Email">
-          <Email />
+          <Email className={socialMediaIcon} />
         </a>
         <a href="https://www.facebook.com/legalisierungjetzt/" rel="noreferrer" aria-label="Facebook" target="_blank">
-          <Facebook />
+          <Facebook className={socialMediaIcon} />
         </a>
         <a href="https://twitter.com/legaljetzt" rel="noreferrer" target="_blank" aria-label="Twitter">
-          <Twitter />
+          <Twitter className={socialMediaIcon} />
         </a>
         <a href="https://www.instagram.com/legalisierung_jetzt/" rel="noreferrer" target="_blank" aria-label="Instagram">
-          <Instagram />
+          <Instagram className={socialMediaIcon} />
         </a>
       </div>
       <p> legalisierung_jetzt@riseup.net</p>
