@@ -1,18 +1,14 @@
 //main: style.scss
-.popup{
-  position: absolute;
-  top: 18px;
-  left: 20px;
-  @media screen and (max-width:900px) {
-    top: 0px;
-    left: 5px;
-    .MuiSvgIcon-root{
-      font-size: 35px;
+.popup {
+  @media screen and (max-width: 900px) {
+    .MuiSvgIcon-root {
+      font-size: 40px;
     }
   }
-  @media screen and (min-width:901px) {
-    .MuiSvgIcon-root{
-      font-size: 35px;
+  @media screen and (min-width: 901px) {
+    .MuiSvgIcon-root {
+      font-size: 40px;
+
     }
   }
 }
