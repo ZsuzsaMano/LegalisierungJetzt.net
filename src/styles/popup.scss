@@ -1,4 +1,5 @@
 //main: style.scss
+
 .popup{
   position: absolute;
   top: 34px;
@@ -6,22 +7,21 @@
   @media screen and (max-width:900px) {
     top: 0px;
     left: 5px;
+
   }
 }
-.popup_languages{
+.popup_languages {
   @include flex(space-around, center, column);
-  color:black;
+  color: black;
   font-size: 1.3rem;
   list-style: none;
   border-radius: 5px;
-  .languages__tab{
+  .languages__tab {
     cursor: pointer;
-    color:black;
+    color: black;
     margin: 3px;
   }
-  
 }
-.popup_languages li:hover{
+.popup_languages li:hover {
   color: #ff26a5;
 }
-

@@ -1,34 +1,36 @@
 //main: style.scss
 
-footer{
+footer {
   @include flex(space-around, center, column);
   min-height: 300px;
   background: black;
-  --color:$lila;
+  --color: $lila;
   padding: 1rem;
   min-width: 90vw;
   white-space: pre-line;
-
+  
   .footer__social{
     width: 400px;
     @media (max-width: 900px) {
       width: 100%;
     }
+
+
     @include flex(space-around, center, row);
   }
-.footer__spende{
+  .footer__spende {
     text-align: center;
-}
-.footer__spende title{
-  font-size: small;
-}
-}
-  a {
-    height: 50px;
-    width: 50px;
   }
-  svg{
-  fill:$lila;
+  .footer__spende title {
+    font-size: small;
+  }
+}
+a {
+  height: 50px;
+  width: 50px;
+}
+svg {
+  fill: $lila;
   width: 100%;
   height: 100%;
-  }
+}

@@ -1,12 +1,5 @@
 import {
-  AppBar,
-  Toolbar,
-  makeStyles,
-  IconButton,
-  Drawer,
-  Link,
-  MenuItem,
-  Grid,
+  AppBar, Toolbar, makeStyles, IconButton, Drawer, Link, MenuItem, Grid,
 } from '@material-ui/core';
 import MenuIcon from '@material-ui/icons/Menu';
 import React, { useState, useEffect } from 'react';
@@ -68,14 +61,7 @@ export default function Navbar() {
   const { t } = useTranslation();
 
   const {
-    header,
-    menuContainer,
-    drawerContainer,
-    desktopGridContainer,
-    hamburgerIcon,
-    mobileMenuItem,
-    paper,
-    hamburgerIconGridItem,
+    header, menuContainer, drawerContainer, desktopGridContainer, hamburgerIcon, mobileMenuItem, paper, hamburgerIconGridItem,
   } = useStyles();
 
   const [state, setState] = useState({
@@ -86,19 +72,17 @@ export default function Navbar() {
   const { mobileView, drawerOpen } = state;
 
   useEffect(() => {
-    const setResponsiveness = () => (window.innerWidth < 900
-      ? setState((prevState) => ({ ...prevState, mobileView: true }))
-      : setState((prevState) => ({ ...prevState, mobileView: false })));
+    const setResponsiveness = () => (window.innerWidth < 900 ? setState(prevState => ({ ...prevState, mobileView: true })) : setState(prevState => ({ ...prevState, mobileView: false })));
 
     setResponsiveness();
 
     window.addEventListener('resize', () => setResponsiveness());
   }, []);
 
-  const handleDrawerOpen = () => setState((prevState) => ({ ...prevState, drawerOpen: true }));
-  const handleDrawerClose = () => setState((prevState) => ({ ...prevState, drawerOpen: false }));
+  const handleDrawerOpen = () => setState(prevState => ({ ...prevState, drawerOpen: true }));
+  const handleDrawerClose = () => setState(prevState => ({ ...prevState, drawerOpen: false }));
 
-  const getDrawerChoices = () => pages.map((p) => {
+  const getDrawerChoices = () => pages.map(p => {
     const label = t(`nav.${p.id}`);
     return (
       <Link
@@ -110,22 +94,13 @@ export default function Navbar() {
           key: label,
         }}
       >
-        <MenuItem
-          className={mobileMenuItem}
-        >
-          {label}
-        </MenuItem>
+        <MenuItem className={mobileMenuItem}>{label}</MenuItem>
       </Link>
     );
   });
 
   const displayMobile = () => (
-    <Grid
-      container
-      justify="flex-end"
-      alignItems="center"
-      spacing={0}
-    >
+    <Grid container justify="flex-end" alignItems="center" spacing={0}>
       <Toolbar>
         <Drawer
           {...{
@@ -135,7 +110,10 @@ export default function Navbar() {
             onClose: handleDrawerClose,
           }}
         >
-          <div className={drawerContainer}>{getDrawerChoices()}</div>
+          <div className={drawerContainer}>
+            <LanguageSelector />
+            {getDrawerChoices()}
+          </div>
         </Drawer>
         <Grid
           className={hamburgerIconGridItem}
@@ -158,15 +136,9 @@ export default function Navbar() {
   );
 
   const displayDesktop = () => (
-    <Grid
-      container
-      direction="row"
-      justify="space-around"
-      alignItems="center"
-      className={desktopGridContainer}
-      spacing={0}
-    >
-      {pages.map((p) => {
+    <Grid container direction="row" justify="space-around" alignItems="center" className={desktopGridContainer} spacing={0}>
+      <LanguageSelector />
+      {pages.map(p => {
         const label = t(`nav.${p.id}`);
         return (
           <Grid item key={p.id}>
@@ -186,12 +158,7 @@ export default function Navbar() {
   return (
     <div className={menuContainer}>
       <menu>
-        <LanguageSelector />
-        <AppBar
-          className={header}
-          position="relative"
-          elevation={0}
-        >
+        <AppBar className={header} position="relative" elevation={0}>
           {mobileView ? displayMobile() : displayDesktop()}
         </AppBar>
       </menu>
