@@ -11,6 +11,18 @@ const Press = () => {
           <h3>{t('press_conference.articles')}</h3>
           <ul className="press__list">
             <li>
+              <a href="https://www.bluewin.ch/de/news/schweiz/was-sich-fuer-sans-papier-nach-einem-jahr-pandemie-veraendert-hat-596672.html?fbclid=IwAR2V_hAlllFxjjdlfcBuPYO3uP8MqDQQ0HlG372MYYcWTZfRjIFna3RFeEE">
+                blueNews, 1.03.2021: Das Risiko der Ausbeutung steigt.Mangelnde Gesundheitsversorgung, prekäres Leben, Angst vor Ausschaffung.
+              </a>
+            </li>
+            <br />
+            <li>
+              <a href="https://taz.de/Einschulung-fuer-Kinder-ohne-Papiere/!5754041/?fbclid=IwAR3RZeKGv81wl3Y0EtTuyeD-2BwcmNOO6FjAk1SjMI02D7wktJV_E0g0co4">
+                Taz, 25.02.2021: Von wegen Recht auf Bildung.Einschulung für Kinder ohne Papiere.
+              </a>
+            </li>
+            <br />
+            <li>
               <a href="https://jungle.world/artikel/2021/05/es-stimmt-nicht-dass-nichts-getan-werden-kann">
                 Jungle World, 04.02.2021: Small Talk mit Amarilis Tapia über die Kampagne »Legalisierung jetzt«. »Es stimmt nicht, dass nichts getan werden kann
               </a>
