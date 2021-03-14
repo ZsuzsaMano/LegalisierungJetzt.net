@@ -7,32 +7,27 @@ import {
   makeStyles,
 } from '@material-ui/core';
 
-const useStyles = makeStyles(() => ({
-  socialMediaIcon: {
-    fontSize: 40,
-    '@media (max-width: 900px)': {
-      fontSize: 35,
-    },
-  },
+const useStyles = makeStyles((theme) => ({
+  icon: theme.icon,
 }));
 
 const Footer = () => {
   const { t } = useTranslation();
-  const { socialMediaIcon } = useStyles();
+  const classes = useStyles();
   return (
     <footer>
       <div className="footer__social">
         <a href="mailto:legalisierung_jetzt@riseup.net" target="_blank" rel="noreferrer" aria-label="Email">
-          <Email className={socialMediaIcon} />
+          <Email className={classes.icon} />
         </a>
         <a href="https://www.facebook.com/legalisierungjetzt/" rel="noreferrer" aria-label="Facebook" target="_blank">
-          <Facebook className={socialMediaIcon} />
+          <Facebook className={classes.icon} />
         </a>
         <a href="https://twitter.com/legaljetzt" rel="noreferrer" target="_blank" aria-label="Twitter">
-          <Twitter className={socialMediaIcon} />
+          <Twitter className={classes.icon} />
         </a>
         <a href="https://www.instagram.com/legalisierung_jetzt/" rel="noreferrer" target="_blank" aria-label="Instagram">
-          <Instagram className={socialMediaIcon} />
+          <Instagram className={classes.icon} />
         </a>
       </div>
       <p> legalisierung_jetzt@riseup.net</p>

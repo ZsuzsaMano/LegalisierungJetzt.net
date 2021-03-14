@@ -1,5 +1,6 @@
 import './i18n';
 import React, { Suspense } from 'react';
+import { ThemeProvider } from '@material-ui/core/styles';
 import {
   BrowserRouter as Router,
   Switch,
@@ -18,41 +19,44 @@ import Materials from './components/Materials';
 import Footer from './components/Footer';
 import Press from './components/Press';
 import Documents from './components/Documents';
-const App = () => (
-  <Suspense fallback="loading">
+import theme from './theme';
 
-    <LegalisierungContextProvider>
-      <div className="App">
-        <Router>
-          <Link to="/">
-            <Hero />
-          </Link>
-          <Navbar />
-          <Switch>
-            <Route exact path="/">
-              <Main />
-            </Route>
-            <Route path="/events">
-              <Events />
-            </Route>
-            <Route path="/materials">
-              <Materials />
-            </Route>
-            <Route path="/letter">
-              <Letter />
-            </Route>
-            <Route path="/press">
-              <Press />
-            </Route>
-            <Route path="/documents">
-              <Documents />
-            </Route>
-          </Switch>
-        </Router>
-        <Footer />
-      </div>
-    </LegalisierungContextProvider>
-  </Suspense>
+const App = () => (
+  <ThemeProvider theme={theme}>
+    <Suspense fallback="loading">
+      <LegalisierungContextProvider>
+        <div className="App">
+          <Router>
+            <Link to="/">
+              <Hero />
+            </Link>
+            <Navbar />
+            <Switch>
+              <Route exact path="/">
+                <Main />
+              </Route>
+              <Route path="/events">
+                <Events />
+              </Route>
+              <Route path="/materials">
+                <Materials />
+              </Route>
+              <Route path="/letter">
+                <Letter />
+              </Route>
+              <Route path="/press">
+                <Press />
+              </Route>
+              <Route path="/documents">
+                <Documents />
+              </Route>
+            </Switch>
+          </Router>
+          <Footer />
+        </div>
+      </LegalisierungContextProvider>
+    </Suspense>
+  </ThemeProvider>
 );
 
 export default App;
