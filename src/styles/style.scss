@@ -23,6 +23,11 @@ $signatureWidth: 200px;
   flex-direction: $direction;
 }
 
+a:hover {
+  transition: all 200ms ease-in;
+  color: $lila
+}
+
 ul.signatureList {
     margin-top: 20px;
     -moz-column-width: $signatureWidth;
