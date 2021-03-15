@@ -14,11 +14,19 @@ const Press = () => {
               <a href="https://www.bluewin.ch/de/news/schweiz/was-sich-fuer-sans-papier-nach-einem-jahr-pandemie-veraendert-hat-596672.html?fbclid=IwAR2V_hAlllFxjjdlfcBuPYO3uP8MqDQQ0HlG372MYYcWTZfRjIFna3RFeEE">
                 blueNews, 1.03.2021: Das Risiko der Ausbeutung steigt.Mangelnde Gesundheitsversorgung, prekäres Leben, Angst vor Ausschaffung.
               </a>
+            <li/>
+            <br />
+            <li>
+              <a href="https://www.neues-deutschland.de/artikel/1148684.illegalisierte-lernen-nur-mit-pass.html">
+                Neues Deutschland, 23.2. 2021: Lernen nur mit Pass. Kinder ohne Papiere sind vom Schulbesuch oft ausgeschlossen.
+              </a>
             </li>
             <br />
             <li>
               <a href="https://taz.de/Einschulung-fuer-Kinder-ohne-Papiere/!5754041/?fbclid=IwAR3RZeKGv81wl3Y0EtTuyeD-2BwcmNOO6FjAk1SjMI02D7wktJV_E0g0co4">
                 Taz, 25.02.2021: Von wegen Recht auf Bildung.Einschulung für Kinder ohne Papiere.
+              <a href="https://taz.de/!5750664/">
+                taz, 26.2.2021: Schule bleibt ein Wunsch.
               </a>
             </li>
             <br />

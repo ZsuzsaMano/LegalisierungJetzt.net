@@ -16,12 +16,7 @@ nav {
     @include flex(space-around, center, row);
 
     & > li:hover {
-      transform: scale(1.1);
-      border-bottom: 2px solid $lila;
-    }
-
-    & > li a.activeRoute {
-      border-bottom: 2px solid $lila;
+      color: $lila;
     }
 
     & > * {
@@ -38,12 +33,7 @@ nav {
   font-size: 1.7rem;
   transition: all 200ms ease-in;
 
-  &:hover {
-    transform: scale(1.1);
-    border-bottom: 2px solid $lila;
-  }
-
   &.activeRoute {
-    border-bottom: 2px solid $lila;
+    color: $lila;
   }
 }
