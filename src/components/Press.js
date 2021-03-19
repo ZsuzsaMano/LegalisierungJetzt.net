@@ -25,6 +25,10 @@ const Press = () => {
             <li>
               <a href="https://taz.de/Einschulung-fuer-Kinder-ohne-Papiere/!5754041/?fbclid=IwAR3RZeKGv81wl3Y0EtTuyeD-2BwcmNOO6FjAk1SjMI02D7wktJV_E0g0co4">
                 Taz, 25.02.2021: Von wegen Recht auf Bildung.Einschulung für Kinder ohne Papiere.
+              </a>
+            </li>
+            <br />
+            <li>   
               <a href="https://taz.de/!5750664/">
                 taz, 26.2.2021: Schule bleibt ein Wunsch.
               </a>
