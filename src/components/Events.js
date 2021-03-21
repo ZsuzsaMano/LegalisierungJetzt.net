@@ -9,14 +9,18 @@ const Events = () => {
       <ul className="dark-box event__box">
         <li>
           {' '}
-          {t('events.upcoming.febrero')}
+          {t('events.upcoming.march')}
         </li>
       </ul>
       <h2 className="event__title title">{t('events.title_past_events')}</h2>
       <ul className="dark-box event__box">
         <li>
           {' '}
-          {t('events.upcoming.enero')}
+          {t('events.past.febrero')}
+        </li>
+        <li>
+          {' '}
+          {t('events.past.januar')}
         </li>
         <li>
           {' '}

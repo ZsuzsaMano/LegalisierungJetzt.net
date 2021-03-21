@@ -115,7 +115,11 @@ export default function Navbar() {
             {getDrawerChoices()}
           </div>
         </Drawer>
-        <Grid className={hamburgerIconGridItem} item xs spacing={0}>
+        <Grid
+          className={hamburgerIconGridItem}
+          item
+          xs
+        >
           <IconButton
             {...{
               edge: 'end',
@@ -137,8 +141,12 @@ export default function Navbar() {
       {pages.map(p => {
         const label = t(`nav.${p.id}`);
         return (
-          <Grid item key={p.id} spacing={0}>
-            <NavLink to={`/${p.link}`} className="route" activeClassName="activeRoute">
+          <Grid item key={p.id}>
+            <NavLink
+              to={`/${p.link}`}
+              className="route"
+              activeClassName="activeRoute"
+            >
               {label}
             </NavLink>
           </Grid>
