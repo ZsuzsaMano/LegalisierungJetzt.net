@@ -8,7 +8,7 @@ import doc3 from '../pdf/3_Offener Brief Legalisierung_Jetzt.pdf';
 import doc4 from '../pdf/4_Rechtliche_Moglichkeiten_auf_Landesebene_Kurzversion.pdf';
 import doc5 from '../pdf/5_Stellungnahme Medibuero.pdf';
 import doc6 from '../pdf/6_Aktionen der Kampagne Legalisierung Jetzt.pdf';
-import doc9 from '../pdf/9_Offener Brief Legalisierung Jetzt Kandidatinnen AGH.pdf';
+import doc9 from '../pdf/9_Offener_Brief_Legalisierung_Jetzt_Kandidatinnen_AGH.pdf';
 import doc10 from '../pdf/10_PM_Vor den Wahlen und nach den Wahlen.pdf';
 
 const Documents = () => {
