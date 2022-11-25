@@ -10,6 +10,7 @@ import doc5 from '../pdf/5_Stellungnahme Medibuero.pdf';
 import doc6 from '../pdf/6_Aktionen der Kampagne Legalisierung Jetzt.pdf';
 import doc9 from '../pdf/9_Offener_Brief_Legalisierung_Jetzt_Kandidatinnen_AGH.pdf';
 import doc10 from '../pdf/10_PM_Vor den Wahlen und nach den Wahlen.pdf';
+import doc11 from '../pdf/11_PM_CityID.pdf';
 
 const Documents = () => {
   const { t } = useTranslation();
@@ -18,6 +19,9 @@ const Documents = () => {
       <section className="dark-box" id="press_info">
         <div className="links">
           <h3 className="press__title">{t('press_conference.documents')}</h3>
+          <a href={doc11} rel="noreferrer" target="_blank">
+            {'-> Pressemitteilung der Kampagne Legalisierung Jetzt! für den 25. November, Tag gegen geschlechtsspezifische Gewalt, zur City-ID in Berlin (DE/ES)'}
+          </a>
           <a href={doc9} rel="noreferrer" target="_blank">
             {'-> Open letter to German Candidates (EN/DE/ES)'}
           </a>
