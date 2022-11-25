@@ -22,6 +22,7 @@ const Documents = () => {
           <a href={doc11} rel="noreferrer" target="_blank">
             {'-> Pressemitteilung der Kampagne Legalisierung Jetzt! für den 25. November, Tag gegen geschlechtsspezifische Gewalt, zur City-ID in Berlin (DE/ES)'}
           </a>
+          <br />
           <a href={doc9} rel="noreferrer" target="_blank">
             {'-> Open letter to German Candidates (EN/DE/ES)'}
           </a>
