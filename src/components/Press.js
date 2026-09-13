@@ -10,20 +10,17 @@ const Press = () => {
         <div className="lettersToDownload">
           <h3>{t('press_conference.articles')}</h3>
           <ul className="press__list">
-            <br />
             <li>
               <a href="https://taz.de/Einschulung-fuer-Kinder-ohne-Papiere/!5754041/?fbclid=IwAR3RZeKGv81wl3Y0EtTuyeD-2BwcmNOO6FjAk1SjMI02D7wktJV_E0g0co4">
                 Taz, 25.02.2021: Von wegen Recht auf Bildung.Einschulung für
                 Kinder ohne Papiere.
               </a>
             </li>
-            <br />
             <li>
               <a href="https://taz.de/!5750664/">
                 taz, 26.2.2021: Schule bleibt ein Wunsch.
               </a>
             </li>
-            <br />
             <li>
               <a href="https://jungle.world/artikel/2021/05/es-stimmt-nicht-dass-nichts-getan-werden-kann">
                 Jungle World, 04.02.2021: Small Talk mit Amarilis Tapia über die
@@ -31,14 +28,12 @@ const Press = () => {
                 getan werden kann
               </a>
             </li>
-            <br />
             <li>
               <a href="https://taz.de/Illegalisierte-Menschen-in-der-Pandemie/!5743518/">
                 taz, 28.1.2021: Illegalisierte Menschen in der Pandemie: Impfung
                 und Legalisierung gefordert
               </a>
             </li>
-            <br />
             <li>
               <a href="https://jungle.world/artikel/2020/43/nicht-auf-dem-papier">
                 Jungle World, 22.10.2020: Nicht auf dem Papier. Die Kampagne
@@ -46,21 +41,18 @@ const Press = () => {
                 Papiere
               </a>
             </li>
-            <br />
             <li>
               <a href="https://m.tagesspiegel.de/berlin/ich-bete-jeden-tag-dass-es-mich-nicht-erwischt-was-die-pandemie-fuer-undokumentierte-migranten-bedeutet/26642734.html">
                 Tagesspiegel was die pandemie fuer undokumentierte migranten
                 bedeutet
               </a>
             </li>
-            <br />
             <li className="press__list-item">
               <a href="https://taz.de/Kampagne-Legalisierung-jetzt/!5719542/">
                 Taz, 12.10.2020: Kampagne „Legalisierung jetzt“: Bisher
                 politisch meist unsichtbar
               </a>
             </li>
-            <br />
             <li className="press__list-item">
               <a href="https://www.jungewelt.de/loginFailed.php?ref=/artikel/388462.menschen-die-selbst-prek%C3%A4r-leben-unterst%C3%BCtzen-andere.html">
                 Junge welt, 16.10 2020: »Menschen, die selbst prekär leben,
@@ -82,7 +74,6 @@ const Press = () => {
                 Por un país sin invisibles
               </a>
             </li>
-            <br />
             <li>
               <a href="https://radiocorax.de/legalisierung-jetzt-gespraech-zur-kampagne-mit-respect-berlin/">
                 #Legalisierung Jetzt! Gespräch zur Kampagne mit Respect Berlin,

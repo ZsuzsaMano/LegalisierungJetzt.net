@@ -43,7 +43,6 @@ const Events = () => {
       <div className="dark-box event__box final_element">
         <h2 className="event__title title">{t('events.events_foot')}</h2>
       </div>
-      <br />
     </main>
   );
 };

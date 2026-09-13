@@ -19,46 +19,58 @@ const Documents = () => {
       <section className="dark-box" id="press_info">
         <div className="links">
           <h3 className="press__title">{t('press_conference.documents')}</h3>
-          <a href={doc11} rel="noreferrer" target="_blank">
-            {'-> Pressemitteilung der Kampagne Legalisierung Jetzt! für den 25. November, Tag gegen geschlechtsspezifische Gewalt, zur City-ID in Berlin (DE/ES)'}
-          </a>
-          <br />
-          <a href={doc9} rel="noreferrer" target="_blank">
-            {'-> Open letter to German Candidates (EN/DE/ES)'}
-          </a>
-          <br />
-          <a href={doc10} rel="noreferrer" target="_blank">
-            {'-> Vor den Wahlen und nach den Wahlen. Legalisierung Jetzt! (EN/DE/ES)'}
-          </a>
-          <br />
-          <a href={doc0} rel="noreferrer" target="_blank">
-            {'-> Invitation to the press conference'}
-          </a>
-          <br />
-          <a href={doc1} rel="noreferrer" target="_blank">
-            {'-> Open Letter English'}
-          </a>
-          <br />
-          <a href={doc2} rel="noreferrer" target="_blank">
-            {'-> Carta Abierta Español'}
-          </a>
-          <br />
-          <a href={doc3} rel="noreferrer" target="_blank">
-            {'-> Offener Brief Deutsch'}
-          </a>
-          <br />
-          <a href={doc4} rel="noreferrer" target="_blank">
-            {'-> Rechtliche Möglichkeiten auf Landesebene'}
-          </a>
-          <br />
-          <a href={doc5} rel="noreferrer" target="_blank">
-            {'-> Stellungnahme Medibuero'}
-          </a>
-          <br />
-          <a href={doc6} rel="noreferrer" target="_blank">
-            {'-> Aktionen der Kampagne Legalisierung Jetzt'}
-          </a>
-          <br />
+          <ul>
+            <li>
+              <a href={doc11} rel="noreferrer" target="_blank">
+                {'-> Pressemitteilung der Kampagne Legalisierung Jetzt! für den 25. November, Tag gegen geschlechtsspezifische Gewalt, zur City-ID in Berlin (DE/ES)'}
+              </a>
+            </li>
+            <li>
+              <a href={doc9} rel="noreferrer" target="_blank">
+                {'-> Open letter to German Candidates (EN/DE/ES)'}
+              </a>
+            </li>
+            <li>
+              <a href={doc10} rel="noreferrer" target="_blank">
+                {'-> Vor den Wahlen und nach den Wahlen. Legalisierung Jetzt! (EN/DE/ES)'}
+              </a>
+            </li>
+            <li>
+              <a href={doc0} rel="noreferrer" target="_blank">
+                {'-> Invitation to the press conference'}
+              </a>
+            </li>
+            <li>
+              <a href={doc1} rel="noreferrer" target="_blank">
+                {'-> Open Letter English'}
+              </a>
+            </li>
+            <li>
+              <a href={doc2} rel="noreferrer" target="_blank">
+                {'-> Carta Abierta Español'}
+              </a>
+            </li>
+            <li>
+              <a href={doc3} rel="noreferrer" target="_blank">
+                {'-> Offener Brief Deutsch'}
+              </a>
+            </li>
+            <li>
+              <a href={doc4} rel="noreferrer" target="_blank">
+                {'-> Rechtliche Möglichkeiten auf Landesebene'}
+              </a>
+            </li>
+            <li>
+              <a href={doc5} rel="noreferrer" target="_blank">
+                {'-> Stellungnahme Medibuero'}
+              </a>
+            </li>
+            <li>
+              <a href={doc6} rel="noreferrer" target="_blank">
+                {'-> Aktionen der Kampagne Legalisierung Jetzt'}
+              </a>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
