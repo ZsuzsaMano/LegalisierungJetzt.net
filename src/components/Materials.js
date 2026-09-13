@@ -32,18 +32,6 @@ const Materials = () => {
           <img src={img11} alt="" />
           <img src={img12} alt="" />
           <img src={img13} alt="" />
-          <div className="video">
-            <ReactPlayer url="https://fb.watch/4aiHALU22R/" controls />
-          </div>
-        </div>
-      </section>
-
-      <section className="dark-box" id="monthly_actions">
-        <h2 className="materials__title title" id="materials__title">
-          {t('events.past.januar')}
-        </h2>
-        <div className="video">
-          <ReactPlayer url="https://fb.watch/3nJznEXf4G/" controls />
         </div>
       </section>
       <section className="dark-box" id="monthly-actions">
