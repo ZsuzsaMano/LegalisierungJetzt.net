@@ -17,7 +17,7 @@ const Footer = () => {
   return (
     <footer>
       <div className="footer__social">
-        <a href="mailto:legalisierung_jetzt@riseup.net" target="_blank" rel="noreferrer" aria-label="Email">
+        <a href="mailto:legalisierungjetzt2026@proton.me" target="_blank" rel="noreferrer" aria-label="Email">
           <Email className={classes.icon} />
         </a>
         <a href="https://www.facebook.com/legalisierungjetzt/" rel="noreferrer" aria-label="Facebook" target="_blank">
@@ -30,7 +30,7 @@ const Footer = () => {
           <Instagram className={classes.icon} />
         </a>
       </div>
-      <p> legalisierung_jetzt@riseup.net</p>
+      <p> legalisierungjetzt2026@proton.me</p>
       <p className="footer__spende title ">{t('bank_acount.title')}</p>
       <p className="footer__spende ">{t('bank_acount.details')}</p>
       <p className="footer__spende ">{t('bank_acount.note')}</p>

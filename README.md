@@ -1,4 +1,3 @@
-
 <p align="center">
   <a href="https://legalisierungjetzt.net/">
     <img src="./src/img/hero.png" alt="Logo" >
@@ -15,11 +14,8 @@ legalisierungjetzt.net
 <br/>
 <br/>
 
+---
 
-
-
-
-***
 ### Summary
 
 The website of an important movement to give equal rights for all human beings
@@ -28,11 +24,12 @@ The website of an important movement to give equal rights for all human beings
 Made with:  React, Sass, and a lot of team work, love and compassion
 </p>
 
-***
+---
 
 ### Languages
 
 The page is available in 3 languages:
+
 <ul>
 <li>German</li>
 <li>English</li>
@@ -40,9 +37,9 @@ The page is available in 3 languages:
 </ul>
 
 If you would like to add an another language you are welcome to contact the team:
- legalisierung_jetzt@riseup.net
+legalisierungjetzt2026@proton.me
 
-***
+---
 
 ### Content
 
@@ -54,27 +51,24 @@ If you would like to add an another language you are welcome to contact the team
 <li>Spendenkonto</li>
 </ul>
 
-***
-***
+---
+
+---
 
 # Development
 
 develop branch deployed here: https://legalisirung-dev.netlify.app/
 
-
 It is an open source project. Contributions are welcome!
 
 If you are interested, you can open an issue you would like to work on, or contact the team for more information.
 
- legalisierung_jetzt@riseup.net
-
+legalisierungjetzt2026@proton.me
 
 ## Sass autocompile
 
 I use this to autocompile all styles into styles.min.css
 https://atom.io/packages/sass-autocompile
-
-
 
 ## Getting Started with Create React App
 
