@@ -6,14 +6,12 @@ const Events = () => {
   return (
     <main className="event">
       <h2 className="event__title title">{t('events.title_upcoming_events')}</h2>
+      <h2 className="event__title title">{t('events.title_past_events')}</h2>
       <ul className="dark-box event__box">
         <li>
           {' '}
           {t('events.upcoming.april')}
         </li>
-      </ul>
-      <h2 className="event__title title">{t('events.title_past_events')}</h2>
-      <ul className="dark-box event__box">
         <li>
           {' '}
           {t('events.past.march')}
@@ -40,9 +38,6 @@ const Events = () => {
         </li>
       </ul>
 
-      <div className="dark-box event__box final_element">
-        <h2 className="event__title title">{t('events.events_foot')}</h2>
-      </div>
     </main>
   );
 };
