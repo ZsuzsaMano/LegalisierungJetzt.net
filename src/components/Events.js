@@ -6,7 +6,7 @@ const Events = () => {
   return (
     <main className="event">
       <h2 className="event__title title">{t('events.title_past_events')}</h2>
-      <ul className="dark-box event__box">
+      <ul className="dark-box event__box final_element">
         <li>
           {' '}
           {t('events.upcoming.april')}
