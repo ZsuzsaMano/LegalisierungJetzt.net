@@ -5,7 +5,6 @@ const Events = () => {
   const { t } = useTranslation();
   return (
     <main className="event">
-      <h2 className="event__title title">{t('events.title_upcoming_events')}</h2>
       <h2 className="event__title title">{t('events.title_past_events')}</h2>
       <ul className="dark-box event__box">
         <li>
