@@ -13,6 +13,12 @@ const pages = [
   { id: 'nav__materials', link: 'materials' },
   { id: 'nav__pressconference', link: 'press' },
   { id: 'nav__documents', link: 'documents' },
+  {
+    id: 'nav__campaign',
+    link: 'https://legalisierungjetzt.net/',
+    external: true,
+    label: '2026',
+  },
 ];
 
 const useStyles = makeStyles(() => ({
@@ -83,7 +89,29 @@ export default function Navbar() {
   const handleDrawerClose = () => setState(prevState => ({ ...prevState, drawerOpen: false }));
 
   const getDrawerChoices = () => pages.map(p => {
-    const label = t(`nav.${p.id}`);
+    const label = p.external ? p.label : t(`nav.${p.id}`);
+
+    if (p.external) {
+      return (
+        <a
+          href={p.link}
+          target="_blank"
+          rel="noreferrer"
+          onClick={handleDrawerClose}
+          className={mobileMenuItem}
+          key={label}
+          style={{
+            display: 'block',
+            fontWeight: 700,
+            textDecoration: 'underline',
+            color: '#d9a9ff',
+          }}
+        >
+          <MenuItem className={mobileMenuItem}>{label}</MenuItem>
+        </a>
+      );
+    }
+
     return (
       <Link
         {...{
@@ -139,7 +167,28 @@ export default function Navbar() {
     <Grid container direction="row" justify="space-around" alignItems="center" className={desktopGridContainer} spacing={0}>
       <LanguageSelector />
       {pages.map(p => {
-        const label = t(`nav.${p.id}`);
+        const label = p.external ? p.label : t(`nav.${p.id}`);
+
+        if (p.external) {
+          return (
+            <Grid item key={p.id}>
+              <a
+                href={p.link}
+                target="_blank"
+                rel="noreferrer"
+                className="route"
+                style={{
+                  fontWeight: 700,
+                  textDecoration: 'underline',
+                  color: '#d9a9ff',
+                }}
+              >
+                {label}
+              </a>
+            </Grid>
+          );
+        }
+
         return (
           <Grid item key={p.id}>
             <NavLink
@@ -161,6 +210,23 @@ export default function Navbar() {
         <AppBar className={header} position="relative" elevation={0}>
           {mobileView ? displayMobile() : displayDesktop()}
         </AppBar>
+        <h3 style={{ textAlign: 'center', margin: 'auto', padding: '1rem', color: 'white' }}>
+          {t('nav.campaign_notice_prefix')}
+          {' '}
+          <a
+            href="https://legalisierungjetzt.net/"
+            target="_blank"
+            rel="noreferrer"
+            style={{
+              textDecoration: 'underline',
+              color: '#d9a9ff',
+              fontWeight: 700,
+            }}
+          >
+            {t('nav.campaign_notice_link')}
+          </a>
+          .
+        </h3>
       </menu>
     </div>
   );
