@@ -15,7 +15,7 @@ const pages = [
   { id: 'nav__documents', link: 'documents' },
   {
     id: 'nav__campaign',
-    link: 'https://legalisierungjetzt.net/',
+    link: 'https://legalisierungjetzt.netlify.app/',
     external: true,
     label: '2026',
   },
@@ -214,7 +214,7 @@ export default function Navbar() {
           {t('nav.campaign_notice_prefix')}
           {' '}
           <a
-            href="https://legalisierungjetzt.net/"
+            href="https://legalisierungjetzt.netlify.app/"
             target="_blank"
             rel="noreferrer"
             style={{
