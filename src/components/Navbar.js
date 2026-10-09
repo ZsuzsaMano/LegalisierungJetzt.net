@@ -64,7 +64,11 @@ const useStyles = makeStyles(() => ({
 }));
 
 export default function Navbar() {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+  const currentLanguage = ['de', 'en', 'es'].includes(i18n.resolvedLanguage || i18n.language)
+    ? (i18n.resolvedLanguage || i18n.language)
+    : 'en';
+  const campaignLink = `https://legalisierungjetzt.netlify.app/${currentLanguage}`;
 
   const {
     header, menuContainer, drawerContainer, desktopGridContainer, hamburgerIcon, mobileMenuItem, paper, hamburgerIconGridItem,
@@ -94,7 +98,7 @@ export default function Navbar() {
     if (p.external) {
       return (
         <a
-          href={p.link}
+          href={p.external ? campaignLink : p.link}
           target="_blank"
           rel="noreferrer"
           onClick={handleDrawerClose}
@@ -173,7 +177,7 @@ export default function Navbar() {
           return (
             <Grid item key={p.id}>
               <a
-                href={p.link}
+                href={p.external ? campaignLink : p.link}
                 target="_blank"
                 rel="noreferrer"
                 className="route"
@@ -214,7 +218,7 @@ export default function Navbar() {
           {t('nav.campaign_notice_prefix')}
           {' '}
           <a
-            href="https://legalisierungjetzt.netlify.app/"
+            href={campaignLink}
             target="_blank"
             rel="noreferrer"
             style={{
