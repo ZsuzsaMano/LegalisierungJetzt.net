@@ -68,7 +68,8 @@ export default function Navbar() {
   const currentLanguage = ['de', 'en', 'es'].includes(i18n.resolvedLanguage || i18n.language)
     ? (i18n.resolvedLanguage || i18n.language)
     : 'en';
-  const campaignLink = `https://legalisierungjetzt.netlify.app/${currentLanguage}`;
+  const campaignLocalePath = currentLanguage === 'de' ? '' : `/${currentLanguage}`;
+  const campaignLink = `https://legalisierungjetzt.netlify.app${campaignLocalePath}`;
 
   const {
     header, menuContainer, drawerContainer, desktopGridContainer, hamburgerIcon, mobileMenuItem, paper, hamburgerIconGridItem,
